@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Seismology - A super blog for seismology</title>
+    <link>http://seismology.xyz/categories/</link>
+    <description>Recent content in Categories on Seismology - A super blog for seismology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    
+	<atom:link href="http://seismology.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Talk</title>
+      <link>http://seismology.xyz/categories/talk/</link>
+      <pubDate>Fri, 28 Apr 2017 21:00:58 +0800</pubDate>
+      
+      <guid>http://seismology.xyz/categories/talk/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>会议日记</title>
+      <link>http://seismology.xyz/categories/%E4%BC%9A%E8%AE%AE%E6%97%A5%E8%AE%B0/</link>
+      <pubDate>Wed, 05 Jul 2017 08:12:00 +0800</pubDate>
+      
+      <guid>http://seismology.xyz/categories/%E4%BC%9A%E8%AE%AE%E6%97%A5%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>地震学软件</title>
+      <link>http://seismology.xyz/categories/%E5%9C%B0%E9%9C%87%E5%AD%A6%E8%BD%AF%E4%BB%B6/</link>
+      <pubDate>Thu, 20 Apr 2017 08:12:00 +0800</pubDate>
+      
+      <guid>http://seismology.xyz/categories/%E5%9C%B0%E9%9C%87%E5%AD%A6%E8%BD%AF%E4%BB%B6/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>数据获取</title>
+      <link>http://seismology.xyz/categories/%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96/</link>
+      <pubDate>Wed, 14 Dec 2016 10:08:41 +0800</pubDate>
+      
+      <guid>http://seismology.xyz/categories/%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>编程</title>
+      <link>http://seismology.xyz/categories/%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Wed, 13 Jan 2016 12:13:19 +0800</pubDate>
+      
+      <guid>http://seismology.xyz/categories/%E7%BC%96%E7%A8%8B/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>计算机</title>
+      <link>http://seismology.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+      <pubDate>Thu, 22 Feb 2018 21:30:00 +0800</pubDate>
+      
+      <guid>http://seismology.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

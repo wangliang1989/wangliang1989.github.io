@@ -1,0 +1,242 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml-stylesheet type="text/xsl" href="http://seismology.xyz/sitemap.xsl"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  
+  <url>
+    <loc>http://seismology.xyz/post/2018-02-22_ssh-landing/</loc>
+    <lastmod>2018-02-22T21:30:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/post/2017-07-04_usa-visa/</loc>
+    <lastmod>2017-07-05T08:12:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/post/2017-04-28_event-location/</loc>
+    <lastmod>2017-04-28T21:00:58+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/post/2017-04-20_capjoint/</loc>
+    <lastmod>2017-04-20T08:12:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/post/2017-03-10_stress-inversion/</loc>
+    <lastmod>2017-03-10T22:19:17+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/post/2016-12-16_character-encoding/</loc>
+    <lastmod>2016-12-15T21:06:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/post/2016-12-08_seisdmc/</loc>
+    <lastmod>2016-12-14T10:08:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/post/2016-03-11_fix-flash-device/</loc>
+    <lastmod>2016-03-11T15:40:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/post/2016-01-13_parallel/</loc>
+    <lastmod>2016-01-13T12:13:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/post/2015-12-04_git-commands/</loc>
+    <lastmod>2015-12-04T12:13:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/post/2015-10-30_jweed-breqfast/</loc>
+    <lastmod>2015-10-30T16:18:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/project/</loc>
+    <lastmod>2018-02-24T14:37:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/about/</loc>
+    <lastmod>2018-02-12T14:37:52+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/categories/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/tags/git/</loc>
+    <lastmod>2015-12-04T12:13:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/tags/jweed/</loc>
+    <lastmod>2015-10-30T16:18:08+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/post/</loc>
+    <lastmod>2018-02-22T21:30:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/</loc>
+    <lastmod>2018-02-22T21:30:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/tags/</loc>
+    <lastmod>2015-12-04T12:13:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/categories/talk/</loc>
+    <lastmod>2017-04-28T21:00:58+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/tags/%E4%BA%8B%E4%BB%B6%E5%AE%9A%E4%BD%8D/</loc>
+    <lastmod>2017-04-28T21:00:58+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/categories/%E4%BC%9A%E8%AE%AE%E6%97%A5%E8%AE%B0/</loc>
+    <lastmod>2017-07-05T08:12:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/categories/%E5%9C%B0%E9%9C%87%E5%AD%A6%E8%BD%AF%E4%BB%B6/</loc>
+    <lastmod>2017-04-20T08:12:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/tags/%E5%A4%87%E4%BB%BD%E4%B8%AD%E5%BF%83/</loc>
+    <lastmod>2016-12-14T10:08:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/tags/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</loc>
+    <lastmod>2016-12-15T21:06:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/tags/%E5%B9%B6%E8%A1%8C/</loc>
+    <lastmod>2016-01-13T12:13:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/tags/%E5%BA%94%E5%8A%9B/</loc>
+    <lastmod>2017-03-10T22:19:17+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/tags/%E5%BC%80%E4%BC%9A%E7%BB%8F%E9%AA%8C/</loc>
+    <lastmod>2017-07-05T08:12:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/categories/%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96/</loc>
+    <lastmod>2016-12-14T10:08:41+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    <lastmod>2018-02-22T21:30:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/tags/%E7%A1%AC%E4%BB%B6/</loc>
+    <lastmod>2016-03-11T15:40:44+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/categories/%E7%BC%96%E7%A8%8B/</loc>
+    <lastmod>2016-01-13T12:13:19+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
+    <lastmod>2018-02-22T21:30:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/tags/%E9%9C%87%E6%BA%90%E6%9C%BA%E5%88%B6/</loc>
+    <lastmod>2017-04-20T08:12:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+</urlset>

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>假期在家 SSH 登陆学校电脑 - Seismology - A super blog for seismology</title>
+  <meta name="renderer" content="webkit" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
+
+<meta http-equiv="Cache-Control" content="no-transform" />
+<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+<meta name="theme-color" content="#f8f5ec" />
+<meta name="msapplication-navbutton-color" content="#f8f5ec">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="#f8f5ec">
+
+
+<meta name="author" content="王亮" />
+  <meta name="description" content="假期在家想 SSH 登陆学校的电脑，有如下障碍：无公网 IP、学校断网和学校断电。 用端口转发解决没有公网 IP 的问题 互联网最基本的结构性质就是其非对称性。" />
+
+
+
+
+
+
+
+<meta name="generator" content="Hugo 0.32.3" />
+
+
+<link rel="canonical" href="http://seismology.xyz/post/2018-02-22_ssh-landing/" />
+
+<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+<link rel="manifest" href="/manifest.json">
+<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+<link href="/dist/even.min.css?v=3.0.0" rel="stylesheet">
+<link href="/lib/fancybox/jquery.fancybox-3.1.20.min.css" rel="stylesheet">
+
+
+
+
+<meta property="og:title" content="假期在家 SSH 登陆学校电脑" />
+<meta property="og:description" content="假期在家想 SSH 登陆学校的电脑，有如下障碍：无公网 IP、学校断网和学校断电。 用端口转发解决没有公网 IP 的问题 互联网最基本的结构性质就是其非对称性。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="http://seismology.xyz/post/2018-02-22_ssh-landing/" />
+
+
+
+<meta property="article:published_time" content="2018-02-22T21:30:00&#43;08:00"/>
+
+<meta property="article:modified_time" content="2018-02-22T21:30:00&#43;08:00"/>
+
+
+
+
+
+
+
+
+
+
+
+<meta itemprop="name" content="假期在家 SSH 登陆学校电脑">
+<meta itemprop="description" content="假期在家想 SSH 登陆学校的电脑，有如下障碍：无公网 IP、学校断网和学校断电。 用端口转发解决没有公网 IP 的问题 互联网最基本的结构性质就是其非对称性。">
+
+
+<meta itemprop="datePublished" content="2018-02-22T21:30:00&#43;08:00" />
+<meta itemprop="dateModified" content="2018-02-22T21:30:00&#43;08:00" />
+<meta itemprop="wordCount" content="747">
+
+
+
+<meta itemprop="keywords" content="服务器," />
+<meta name="twitter:card" content="summary"/><meta name="twitter:title" content="假期在家 SSH 登陆学校电脑"/>
+<meta name="twitter:description" content="假期在家想 SSH 登陆学校的电脑，有如下障碍：无公网 IP、学校断网和学校断电。 用端口转发解决没有公网 IP 的问题 互联网最基本的结构性质就是其非对称性。"/>
+
+<!--[if lte IE 9]>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+  <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+<![endif]-->
+
+</head>
+<body>
+  <div id="mobile-navbar" class="mobile-navbar">
+  <div class="mobile-header-logo">
+    <a href="/" class="logo">Seismology</a>
+  </div>
+  <div class="mobile-navbar-icon">
+    <span></span>
+    <span></span>
+    <span></span>
+  </div>
+</div>
+<nav id="mobile-menu" class="mobile-menu slideout-menu">
+  <ul class="mobile-menu-list">
+    <a href="/">
+        <li class="mobile-menu-item">主页</li>
+      </a><a href="/post/">
+        <li class="mobile-menu-item">归档</li>
+      </a><a href="/tags/">
+        <li class="mobile-menu-item">标签</li>
+      </a><a href="/categories/">
+        <li class="mobile-menu-item">分类</li>
+      </a><a href="/project/">
+        <li class="mobile-menu-item">Project</li>
+      </a><a href="/about/">
+        <li class="mobile-menu-item">关于</li>
+      </a>
+  </ul>
+</nav>
+  <div class="container" id="mobile-panel">
+    <header id="header" class="header">
+        <div class="logo-wrapper">
+  <a href="/" class="logo">Seismology</a>
+</div>
+
+<nav class="site-navbar">
+  <ul id="menu" class="menu">
+    <li class="menu-item">
+        <a class="menu-item-link" href="/">主页</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/post/">归档</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/tags/">标签</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/categories/">分类</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/project/">Project</a>
+      </li><li class="menu-item">
+        <a class="menu-item-link" href="/about/">关于</a>
+      </li>
+  </ul>
+</nav>
+    </header>
+
+    <main id="main" class="main">
+      <div class="content-wrapper">
+        <div id="content" class="content">
+          <article class="post">
+    
+    <header class="post-header">
+      <h1 class="post-title">假期在家 SSH 登陆学校电脑</h1>
+
+      <div class="post-meta">
+        <span class="post-time"> 2018-02-22 </span>
+        <div class="post-category">
+            
+              <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/"> 计算机 </a>
+            
+          </div>
+        
+        
+      </div>
+    </header>
+
+    
+    
+<div class="post-toc" id="post-toc">
+  <h2 class="post-toc-title">文章目录</h2>
+  
+  <div class="post-toc-content">
+    <nav id="TableOfContents">
+<ul>
+<li><a href="#用端口转发解决没有公网-ip-的问题">用端口转发解决没有公网 IP 的问题</a>
+<ul>
+<li><a href="#购买和配置-natapp-服务">购买和配置 NATAPP 服务</a></li>
+</ul></li>
+<li><a href="#学校断网和断电">学校断网和断电</a>
+<ul>
+<li><a href="#定时和来电开机">定时和来电开机</a></li>
+<li><a href="#重新登陆校园网">重新登陆校园网</a></li>
+</ul></li>
+<li><a href="#参考">参考</a></li>
+</ul>
+</nav>
+  </div>
+</div>
+
+    
+    <div class="post-content">
+      
+
+<p>假期在家想 SSH 登陆学校的电脑，有如下障碍：无公网 IP、学校断网和学校断电。</p>
+
+<h1 id="用端口转发解决没有公网-ip-的问题">用端口转发解决没有公网 IP 的问题</h1>
+
+<p>互联网最基本的结构性质就是其非对称性。当你的服务器不具有公网 IP 的时候，服务端必须在同一个局域网内才能实现 SSH 登陆。
+这就好比北京的电话相互拨打不需要输入区号的，但是如果要给上海打就需要区号了。公网 IP 在国内是非常稀缺的互联网资源，学校是不会给学生的（听说中科大给）。
+可以使用「端口转发」来进行中转，以回避这个问题。</p>
+
+<h2 id="购买和配置-natapp-服务">购买和配置 NATAPP 服务</h2>
+
+<p>我用的端口转发服务是 NATAPP，国内的，速度稳定性有保障，完全合法。我建议购买 VIP_1 型，实惠够用。</p>
+
+<p>隧道本身的配置见 NATAPP 的官方文档即可（<strong>配置时注意本地端口改为 22</strong>）。
+在 /etc/rc.local 中加入以下内容：</p>
+
+<pre><code class="language-bash">nohup /usr/local/natapp -authtoken=abc123 -log=stdout &amp;# 开机启动 NATAPP
+</code></pre>
+
+<h1 id="学校断网和断电">学校断网和断电</h1>
+
+<p>因为各种原因，学校可能会断网和断电，下面罗列了一些方法以便在网络和电力恢复后能重新登陆。</p>
+
+<h2 id="定时和来电开机">定时和来电开机</h2>
+
+<p>目前，多数 PC 计算机可以通过设置 BIOS 实现定时开机和断电后来电开机。</p>
+
+<h2 id="重新登陆校园网">重新登陆校园网</h2>
+
+<p>断电后，断网后肯定是需要重新校园网登陆的。桂工和成理用的是 drcom 网页登陆。
+首先需要抓取 HTTP POST 请求，看看认证过程中究竟给认证服务器发送了什么内容。
+Chrome 浏览器打开认证页面，右键选择「检查」，打开开发者工具， 选择 network，勾选 Preserve log。
+在登录页面填写帐号信息，点击登录， 即可看到相关的 HTTP 请求。
+在 ALL 中找到 Request Method 为 POST 的那个，右键-&gt;Copy-&gt; Copy as cURL，即可得到认证所需的 curl 命令。
+使用该命令即可进行登录认证。</p>
+
+<p>在 /etc/rc.local 中加入以下内容：</p>
+
+<pre><code class="language-bash">nohup /home/peterpan/ping -log=stdout &amp;
+# 开机启动脚 ping，千万别忘了文件 ping 要给予可执行权限，这条语句要在启动 NATAPP 那条之前
+</code></pre>
+
+<p>ping 的内容如下</p>
+
+<pre><code class="language-perl">#!/usr/bin/env perl
+use strict;
+use warnings;
+while () {
+    system &quot;sh /home/peterpan/curl&quot;;# 登陆校园网，文件 curl 的内容是上面得到的 curl 命令
+    for (my $i = 0;$i &lt;= 20;$i++) {
+        system &quot;ping www.natapp.cn -c 5&quot;;# 间隔 300 秒 ping 5 次防止掉线
+        sleep(300);
+    }
+    system &quot;service networking restart&quot;;# 间隔 6000 秒无论怎样重启一次网络服务
+}
+</code></pre>
+
+<h1 id="参考">参考</h1>
+
+<p><a href="https://butui.me/post/use-curl-for-drcom-webauth/">https://butui.me/post/use-curl-for-drcom-webauth/</a></p>
+
+    </div>
+
+    
+    <div class="post-copyright">
+  <p class="copyright-item">
+    <span class="item-title">文章作者</span>
+    <span class="item-content">王亮</span>
+  </p>
+  <p class="copyright-item">
+    <span class="item-title">上次更新</span>
+    <span class="item-content">2018-02-22</span>
+  </p>
+  
+  <p class="copyright-item">
+    <span class="item-title">许可协议</span>
+    <span class="item-content"><a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank">CC 4.0</a></span>
+  </p>
+</div>
+
+    
+    
+
+    <footer class="post-footer">
+      <div class="post-tags">
+          
+          <a href="/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/">服务器</a>
+          
+        </div>
+
+      
+      <nav class="post-nav">
+        
+        
+          <a class="next" href="/post/2017-07-04_usa-visa/">
+            <span class="next-text nav-default">记我第一次出国——2017年6月休斯顿之行</span>
+            <span class="prev-text nav-mobile">下一篇</span>
+            <i class="iconfont icon-right"></i>
+          </a>
+      </nav>
+    </footer>
+  </article>
+        </div>
+        
+  
+
+  
+
+  <div id="lv-container" data-id="city" data-uid="MTAyMC8zNDE4Mi8xMDcxOQ==">
+  <script type="text/javascript">
+    (function(d, s) {
+      var j, e = d.getElementsByTagName(s)[0];
+
+      if (typeof LivereTower === 'function') { return; }
+
+      j = d.createElement(s);
+      j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+      j.async = true;
+
+      e.parentNode.insertBefore(j, e);
+    })(document, 'script');
+  </script>
+  <noscript>Please enable JavaScript to view the comments powered by <a href="https://livere.com/">LiveRe.</a></noscript>
+  </div>
+      </div>
+    </main>
+
+    <footer id="footer" class="footer">
+      <div class="social-links">
+      <a href="mailto:wangliang0222@foxmail.com" class="iconfont icon-email" title="email"></a>
+      <a href="http://github.com/wangliang1989" class="iconfont icon-github" title="github"></a>
+  <a href="http://seismology.xyz/index.xml" type="application/rss+xml" class="iconfont icon-rss" title="rss"></a>
+</div>
+
+<div class="copyright">
+  <span class="power-by">
+    由 <a class="hexo-link" href="https://gohugo.io">Hugo</a> 强力驱动
+  </span>
+  <span class="division">|</span>
+  <span class="theme-info">
+    主题 - 
+    <a class="theme-link" href="https://github.com/olOwOlo/hugo-theme-even">Even</a>
+  </span>
+
+  
+
+  <span class="copyright-year">
+    &copy; 
+    2018
+    <span class="heart">
+      <i class="iconfont icon-heart"></i>
+    </span>
+    <span class="author">Liang Wang</span>
+  </span>
+</div>
+    </footer>
+
+    <div class="back-to-top" id="back-to-top">
+      <i class="iconfont icon-up"></i>
+    </div>
+  </div>
+  
+<script src="/lib/highlight/highlight.pack.js?v=20171001"></script><script type="text/javascript" src="/lib/jquery/jquery-3.2.1.min.js"></script>
+  <script type="text/javascript" src="/lib/slideout/slideout-1.0.1.min.js"></script>
+  <script type="text/javascript" src="/lib/fancybox/jquery.fancybox-3.1.20.min.js"></script>
+<script type="text/javascript" src="/dist/even.min.js?v=3.0.0"></script>
+
+
+<script>
+window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+ga('create', 'UA-114291471-1', 'auto');
+ga('send', 'pageview');
+</script>
+<script async src='//www.google-analytics.com/analytics.js'></script>
+
+
+
+
+
+
+
+</body>
+</html>

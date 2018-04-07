@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编程 on Seismology - A super blog for seismology</title>
+    <link>http://seismology.xyz/categories/%E7%BC%96%E7%A8%8B/</link>
+    <description>Recent content in 编程 on Seismology - A super blog for seismology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 13 Jan 2016 12:13:19 +0800</lastBuildDate>
+    
+	<atom:link href="http://seismology.xyz/categories/%E7%BC%96%E7%A8%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>简单并行方法汇总</title>
+      <link>http://seismology.xyz/post/2016-01-13_parallel/</link>
+      <pubDate>Wed, 13 Jan 2016 12:13:19 +0800</pubDate>
+      
+      <guid>http://seismology.xyz/post/2016-01-13_parallel/</guid>
+      <description>据 LUG 里比较专业的 Linuxer 介绍，多开几个终端，不能自动的分配核。 另外，不并行完成一个程序所用时间除以并行完成所用的时间之商与计算机核数相等是并行优化</description>
+    </item>
+    
+    <item>
+      <title>git 常用命令</title>
+      <link>http://seismology.xyz/post/2015-12-04_git-commands/</link>
+      <pubDate>Fri, 04 Dec 2015 12:13:19 +0800</pubDate>
+      
+      <guid>http://seismology.xyz/post/2015-12-04_git-commands/</guid>
+      <description>和提交有关 添加或修改文件的修改提交到暂存区(记住：git跟踪的是修改！) git add &amp;lt;fileName&amp;gt; 删除文件的修改提交到暂存区 git rm &amp;lt;fileName&amp;gt; 提交到仓库 git commit -m&amp;quot;</description>
+    </item>
+    
+  </channel>
+</rss>
