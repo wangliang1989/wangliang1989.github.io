@@ -10,6 +10,6 @@ comment: false
 mathjax: false
 ---
 
-[sacio_Fortran](https://github.com/wangliang1989/sacio_Fortran)
+[sacio_Fortran](https://seismology.xyz/sacio_Fortran)
 
 [Oh-My-CAP](http://oh-my-cap.seismology.xyz)
