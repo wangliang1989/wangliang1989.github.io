@@ -24,11 +24,14 @@ mathjax: false
 我用的端口转发服务是 NATAPP，国内的，速度稳定性有保障，完全合法。我建议购买 VIP_1 型，实惠够用。
 
 隧道本身的配置见 NATAPP 的官方文档即可（**配置时注意本地端口改为 22**）。
-在 /etc/rc.local 中加入以下内容：
+
+然后，需要将以下内容加入开机启动服务：
 
 ```bash
 nohup /usr/local/natapp -authtoken=abc123 -log=stdout &# 开机启动 NATAPP
 ```
+
+Ubuntu/Mint 用户在 /etc/rc.local 中加入。Centos7 用户在 /etc/rc.d/rc.local 中加入，并且要赋予可执行权限。
 
 # 学校断网和断电
 
@@ -42,15 +45,17 @@ nohup /usr/local/natapp -authtoken=abc123 -log=stdout &# 开机启动 NATAPP
 
 断电后，断网后肯定是需要重新校园网登陆的。桂工和成理用的是 drcom 网页登陆。
 首先需要抓取 HTTP POST 请求，看看认证过程中究竟给认证服务器发送了什么内容。
-Chrome 浏览器打开认证页面，右键选择「检查」，打开开发者工具， 选择 network，勾选 Preserve log。
+首先用 Chrome 浏览器打开认证页面。然后，右键选择检查/inspect，打开开发者工具， 在新打开的右侧的顶端找到 Network 并点击，再勾选 Preserve log。
 在登录页面填写帐号信息，点击登录， 即可看到相关的 HTTP 请求。
-在 ALL 中找到 Request Method 为 POST 的那个，右键->Copy-> Copy as cURL，即可得到认证所需的 curl 命令。
+在 ALL 中找到 Request Method 为 POST 的那个，通常就是第一个，Name 是一个 IP 地址那个，然后右键->Copy-> Copy as cURL，即可得到认证所需的 curl 命令。
 使用该命令即可进行登录认证。
 
-在 /etc/rc.local 中加入以下内容：
+![pic](/media/2018041101.png)
+
+在开机启动服务中加入以下内容：
 
 ```bash
-nohup /home/peterpan/ping -log=stdout &
+/home/peterpan/bin/ping &
 # 开机启动脚 ping，千万别忘了文件 ping 要给予可执行权限，这条语句要在启动 NATAPP 那条之前
 ```
 ping 的内容如下
@@ -60,7 +65,7 @@ ping 的内容如下
 use strict;
 use warnings;
 while () {
-    system "sh /home/peterpan/curl";# 登陆校园网，文件 curl 的内容是上面得到的 curl 命令
+    system "sh /home/peterpan/bin/login";# 登陆校园网，文件 curl 的内容是上面得到的 curl 命令
     for (my $i = 0;$i <= 20;$i++) {
         system "ping www.natapp.cn -c 5";# 间隔 300 秒 ping 5 次防止掉线
         sleep(300);
