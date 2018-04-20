@@ -9,6 +9,7 @@ author: 王亮
 weight: 10
 contentCopyright: '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank">CC 4.0</a>'
 mathjax: false
+slug: git-commands
 ---
 
 # 和提交有关

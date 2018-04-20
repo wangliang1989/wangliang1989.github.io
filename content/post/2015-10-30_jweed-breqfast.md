@@ -9,6 +9,7 @@ author: 王亮
 weight: 10
 contentCopyright: '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank">CC 4.0</a>'
 mathjax: false
+slug: jweed-breakfast
 ---
 
 BREQ_FAST 是 通过发送特定格式的邮件到指定的邮箱来申请数据。JWEED 可以生成该特定格式的邮件。

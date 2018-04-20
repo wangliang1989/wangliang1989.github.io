@@ -9,6 +9,7 @@ author: 王亮
 weight: 10
 contentCopyright: '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank">CC 4.0</a>'
 mathjax: false
+slug: fix-flash-device
 ---
 
 可能是没有安全卸载造成的。症状是说文件系统是只读文件系统，而且不管怎么加权限都是加不了的。修复命令是

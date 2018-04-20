@@ -9,6 +9,7 @@ author: 王亮
 weight: 10
 contentCopyright: '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank">CC 4.0</a>'
 mathjax: false
+slug: character-encoding
 ---
 
 # 文本文件与二进制文件

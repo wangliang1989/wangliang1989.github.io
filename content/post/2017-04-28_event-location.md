@@ -9,6 +9,7 @@ author: 王亮
 weight: 10
 contentCopyright: '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank">CC 4.0</a>'
 mathjax: false
+slug: talk-event-location
 ---
 
 本 talk 讨论利用走时对地震绝对定位的一些认识。

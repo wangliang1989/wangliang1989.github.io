@@ -9,6 +9,7 @@ author: 王亮
 weight: 10
 contentCopyright: '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank">CC 4.0</a>'
 mathjax: false
+slug: ssh-landing
 ---
 
 假期在家想 SSH 登陆学校的电脑，有如下障碍：无公网 IP、学校断网和学校断电。
