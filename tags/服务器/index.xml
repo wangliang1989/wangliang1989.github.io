@@ -13,10 +13,10 @@
     
     <item>
       <title>假期在家 SSH 登陆学校电脑</title>
-      <link>http://seismology.xyz/post/2018-02-22_ssh-landing/</link>
+      <link>http://seismology.xyz/post/ssh-landing/</link>
       <pubDate>Thu, 22 Feb 2018 21:30:00 +0800</pubDate>
       
-      <guid>http://seismology.xyz/post/2018-02-22_ssh-landing/</guid>
+      <guid>http://seismology.xyz/post/ssh-landing/</guid>
       <description>假期在家想 SSH 登陆学校的电脑，有如下障碍：无公网 IP、学校断网和学校断电。 用端口转发解决没有公网 IP 的问题 互联网最基本的结构性质就是其非对称性。</description>
     </item>
     

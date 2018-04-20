@@ -13,10 +13,10 @@
     
     <item>
       <title>git 常用命令</title>
-      <link>http://seismology.xyz/post/2015-12-04_git-commands/</link>
+      <link>http://seismology.xyz/post/git-commands/</link>
       <pubDate>Fri, 04 Dec 2015 12:13:19 +0800</pubDate>
       
-      <guid>http://seismology.xyz/post/2015-12-04_git-commands/</guid>
+      <guid>http://seismology.xyz/post/git-commands/</guid>
       <description>和提交有关 添加或修改文件的修改提交到暂存区(记住：git跟踪的是修改！) git add &amp;lt;fileName&amp;gt; 删除文件的修改提交到暂存区 git rm &amp;lt;fileName&amp;gt; 提交到仓库 git commit -m&amp;quot;</description>
     </item>
     

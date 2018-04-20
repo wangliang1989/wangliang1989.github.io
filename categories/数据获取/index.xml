@@ -13,19 +13,19 @@
     
     <item>
       <title>备份中心数据下载</title>
-      <link>http://seismology.xyz/post/2016-12-08_seisdmc/</link>
+      <link>http://seismology.xyz/post/seisdmc/</link>
       <pubDate>Wed, 14 Dec 2016 10:08:41 +0800</pubDate>
       
-      <guid>http://seismology.xyz/post/2016-12-08_seisdmc/</guid>
+      <guid>http://seismology.xyz/post/seisdmc/</guid>
       <description>备份中心的地址是 http://www.seisdmc.ac.cn/。 用户定制方式波形数据申请 地震事件波形数据 登陆以后，打开『GIS浏览』选项</description>
     </item>
     
     <item>
       <title>用 JWEED 和 QQ 邮箱发送 BREQ_FAST 邮件</title>
-      <link>http://seismology.xyz/post/2015-10-30_jweed-breqfast/</link>
+      <link>http://seismology.xyz/post/jweed-breakfast/</link>
       <pubDate>Fri, 30 Oct 2015 16:18:08 +0800</pubDate>
       
-      <guid>http://seismology.xyz/post/2015-10-30_jweed-breqfast/</guid>
+      <guid>http://seismology.xyz/post/jweed-breakfast/</guid>
       <description>BREQ_FAST 是 通过发送特定格式的邮件到指定的邮箱来申请数据。JWEED 可以生成该特定格式的邮件。 本文将以我组申请01年和02年两年，在东经85度到89</description>
     </item>
     

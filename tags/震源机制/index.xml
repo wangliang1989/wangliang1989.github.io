@@ -13,10 +13,10 @@
     
     <item>
       <title>CAPjoint 学习笔记</title>
-      <link>http://seismology.xyz/post/2017-04-20_capjoint/</link>
+      <link>http://seismology.xyz/post/capjoint/</link>
       <pubDate>Thu, 20 Apr 2017 08:12:00 +0800</pubDate>
       
-      <guid>http://seismology.xyz/post/2017-04-20_capjoint/</guid>
+      <guid>http://seismology.xyz/post/capjoint/</guid>
       <description>CAPjoint 是陈伟文和贾哲（音）在中科大读研期间（导师：倪四道）的作品，其基于 CAP（不是gCAP，不能做完整矩张量），主要优势是可以使用远震的数据。</description>
     </item>
     

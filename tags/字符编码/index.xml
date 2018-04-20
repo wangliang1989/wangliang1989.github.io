@@ -13,10 +13,10 @@
     
     <item>
       <title>字符编码、文件换行等问题的说明</title>
-      <link>http://seismology.xyz/post/2016-12-16_character-encoding/</link>
+      <link>http://seismology.xyz/post/character-encoding/</link>
       <pubDate>Thu, 15 Dec 2016 21:06:44 +0800</pubDate>
       
-      <guid>http://seismology.xyz/post/2016-12-16_character-encoding/</guid>
+      <guid>http://seismology.xyz/post/character-encoding/</guid>
       <description>文本文件与二进制文件 所有人都知道，计算机的世界里只有二进制的 0 和 1。一切都是用二进制来存储的。那为什么还有文本文件和二进制文件之分呢？ 要回答</description>
     </item>
     

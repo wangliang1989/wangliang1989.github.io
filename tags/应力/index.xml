@@ -13,10 +13,10 @@
     
     <item>
       <title>应力反演talk</title>
-      <link>http://seismology.xyz/post/2017-03-10_stress-inversion/</link>
+      <link>http://seismology.xyz/post/talk-stress-inversion/</link>
       <pubDate>Fri, 10 Mar 2017 22:19:17 +0800</pubDate>
       
-      <guid>http://seismology.xyz/post/2017-03-10_stress-inversion/</guid>
+      <guid>http://seismology.xyz/post/talk-stress-inversion/</guid>
       <description>应力张量基础 首先明确应力的量纲和压强相同。 什么是应力张量 应力张量的数学形式是一个 3x3 的矩阵，由于对称性，独立的量有 6 个。对于介质的任意一点来说</description>
     </item>
     

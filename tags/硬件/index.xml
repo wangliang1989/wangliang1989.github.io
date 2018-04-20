@@ -13,10 +13,10 @@
     
     <item>
       <title>闪存盘的修复</title>
-      <link>http://seismology.xyz/post/2016-03-11_fix-flash-device/</link>
+      <link>http://seismology.xyz/post/fix-flash-device/</link>
       <pubDate>Fri, 11 Mar 2016 15:40:44 +0800</pubDate>
       
-      <guid>http://seismology.xyz/post/2016-03-11_fix-flash-device/</guid>
+      <guid>http://seismology.xyz/post/fix-flash-device/</guid>
       <description>可能是没有安全卸载造成的。症状是说文件系统是只读文件系统，而且不管怎么加权限都是加不了的。修复命令是 sudo fsck -fy /dev/sdb1 注意使用前要确保 sdb1 是要修复的闪存</description>
     </item>
     
