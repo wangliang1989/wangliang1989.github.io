@@ -12,4 +12,4 @@ mathjax: false
 
 [sacio_Fortran](https://seismology.xyz/sacio_Fortran)
 
-[Oh-My-CAP](http://oh-my-cap.seismology.xyz)
+[Oh-My-CAP](https://seismology.xyz/oh-my-cap/)
