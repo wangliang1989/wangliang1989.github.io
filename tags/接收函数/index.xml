@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>接收函数 on Seismology - A super blog for seismology</title>
+    <link>http://seismology.xyz/tags/%E6%8E%A5%E6%94%B6%E5%87%BD%E6%95%B0/</link>
+    <description>Recent content in 接收函数 on Seismology - A super blog for seismology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Mon, 07 May 2018 00:21:00 +0800</lastBuildDate>
+    
+	<atom:link href="http://seismology.xyz/tags/%E6%8E%A5%E6%94%B6%E5%87%BD%E6%95%B0/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>接收函数方法经典文章阅读</title>
+      <link>http://seismology.xyz/post/reading-receiver-function/</link>
+      <pubDate>Mon, 07 May 2018 00:21:00 +0800</pubDate>
+      
+      <guid>http://seismology.xyz/post/reading-receiver-function/</guid>
+      <description>从这个星期开始，我争取每周公开一篇我阅读地球物理文章、书籍的总结笔记，分享给大家。 人类第一次知道青藏高原是双地壳结构靠的就是接收函数方法。接</description>
+    </item>
+    
+  </channel>
+</rss>
