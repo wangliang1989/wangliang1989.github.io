@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 07 May 2018 00:21:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 14 May 2018 20:21:00 +0800</lastBuildDate>
     
 	<atom:link href="http://seismology.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>复杂的地球重力场——重力学扫盲学习笔记一</title>
+      <link>http://seismology.xyz/post/reading-gravity-complexity/</link>
+      <pubDate>Mon, 14 May 2018 20:21:00 +0800</pubDate>
+      
+      <guid>http://seismology.xyz/post/reading-gravity-complexity/</guid>
+      <description>从这个星期开始，文献阅读板块将连载重力学和固体潮的一些基础知识。我的重力学学得很不好。 现在读博士，遇到了上课很认真的老师，学到了一些知识，对</description>
+    </item>
     
     <item>
       <title>接收函数方法经典文章阅读</title>
