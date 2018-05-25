@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 14 May 2018 20:21:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 25 May 2018 15:58:00 +0800</lastBuildDate>
     
 	<atom:link href="http://seismology.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>重力位——重力学扫盲学习笔记二</title>
+      <link>http://seismology.xyz/post/reading-gravity-normal-gravity-formula/</link>
+      <pubDate>Fri, 25 May 2018 15:58:00 +0800</pubDate>
+      
+      <guid>http://seismology.xyz/post/reading-gravity-normal-gravity-formula/</guid>
+      <description>点质量的引力场和引力位 点质量的引力场 点质量 $m_1$ 受到的来自点质量 $m_2$ 的引力为 $$\overrightarrow{f_{12}} = G \frac{m_1m_2}{\left|\overrightarrow{r_1} - \overrightarrow{r_2}\right|^2} \frac{\overrightarrow{r_2} - \overrightarrow{r_1}}{\left|\overrightarrow{r_2} - \overrightarrow{r_1}\right|} = G \frac{m_1m_2}{\left|\overrightarrow{r_2} - \overrightarrow{r_1}\right|^3} (\overrightarrow{r_2} - \overrightarrow{r_1})$$ 而引力场为 $$ \overrightarrow{F} = \frac{\overrightarrow{f_{12}}}{m_1}$$ 两个式子联立 $$\overrightarrow{F}</description>
+    </item>
     
     <item>
       <title>复杂的地球重力场——重力学扫盲学习笔记一</title>
