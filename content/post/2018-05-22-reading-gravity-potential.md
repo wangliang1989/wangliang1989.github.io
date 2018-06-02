@@ -8,7 +8,7 @@ author: 王亮
 weight: 10
 contentCopyright: '<a href="https://creativecommons.org/licenses/by-nc-sa/4.0/deed.zh" rel="noopener" target="_blank">CC 4.0</a>'
 mathjax: true
-slug: reading-gravity-normal-gravity-formula
+slug: reading-gravity-potential 
 ---
 
 # 点质量的引力场和引力位
