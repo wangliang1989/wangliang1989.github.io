@@ -6,10 +6,28 @@
     <description>Recent content on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 27 May 2018 20:47:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 11 Jun 2018 20:25:00 +0800</lastBuildDate>
     
 	<atom:link href="http://seismology.xyz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>一些天文常识——重力学扫盲学习笔记五</title>
+      <link>http://seismology.xyz/post/reading-gravity-astronomy-knowledge/</link>
+      <pubDate>Mon, 11 Jun 2018 20:25:00 +0800</pubDate>
+      
+      <guid>http://seismology.xyz/post/reading-gravity-astronomy-knowledge/</guid>
+      <description>在这一篇笔记中，将讲述三个常识性的天文学知识。尤其是后面两个，是后面知识的基础。 拉格朗日点 宇宙空间中的物体受到太阳和地球的引力作用。 如果在一</description>
+    </item>
+    
+    <item>
+      <title>重力均衡理论——重力学扫盲学习笔记四</title>
+      <link>http://seismology.xyz/post/reading-gravity-equilibrium/</link>
+      <pubDate>Sat, 02 Jun 2018 13:37:00 +0800</pubDate>
+      
+      <guid>http://seismology.xyz/post/reading-gravity-equilibrium/</guid>
+      <description>均衡理论的提出 当靠近一个庞大的山体时，因为山体物质的吸引，铅锤必定会有所偏离原来的竖直方向。 1749年，皮埃尔布格在南美洲的 Mt. Ardes 发现实际垂线</description>
+    </item>
     
     <item>
       <title>重力校正——重力学扫盲学习笔记三</title>

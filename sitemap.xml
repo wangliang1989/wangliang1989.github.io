@@ -3,6 +3,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://seismology.xyz/post/reading-gravity-astronomy-knowledge/</loc>
+    <lastmod>2018-06-11T20:25:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/post/reading-gravity-equilibrium/</loc>
+    <lastmod>2018-06-02T13:37:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://seismology.xyz/post/reading-gravity-correction/</loc>
     <lastmod>2018-05-27T20:47:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -143,14 +157,14 @@
   
   <url>
     <loc>http://seismology.xyz/post/</loc>
-    <lastmod>2018-05-27T20:47:00+08:00</lastmod>
+    <lastmod>2018-06-11T20:25:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://seismology.xyz/</loc>
-    <lastmod>2018-05-27T20:47:00+08:00</lastmod>
+    <lastmod>2018-06-11T20:25:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -241,7 +255,7 @@
   
   <url>
     <loc>http://seismology.xyz/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/</loc>
-    <lastmod>2018-05-27T20:47:00+08:00</lastmod>
+    <lastmod>2018-06-11T20:25:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -276,7 +290,7 @@
   
   <url>
     <loc>http://seismology.xyz/tags/%E9%87%8D%E5%8A%9B/</loc>
-    <lastmod>2018-05-27T20:47:00+08:00</lastmod>
+    <lastmod>2018-06-11T20:25:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
