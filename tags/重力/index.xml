@@ -6,10 +6,19 @@
     <description>Recent content in 重力 on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Mon, 11 Jun 2018 20:25:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 27 Jun 2018 13:17:00 +0800</lastBuildDate>
     
 	<atom:link href="http://seismology.xyz/tags/%E9%87%8D%E5%8A%9B/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>引潮力对地月系运动的影响——重力学扫盲学习笔记六</title>
+      <link>http://seismology.xyz/post/reading-gravity-movement-in-earth-moon-system/</link>
+      <pubDate>Wed, 27 Jun 2018 13:17:00 +0800</pubDate>
+      
+      <guid>http://seismology.xyz/post/reading-gravity-movement-in-earth-moon-system/</guid>
+      <description>根据天文学观测，在地球、月球双星系统中，地球是围绕地月系质心做圆周平动。 地球上每一个点的运动轨迹的形状和速度完全一样，这样与之对应的惯性离心</description>
+    </item>
     
     <item>
       <title>一些天文常识——重力学扫盲学习笔记五</title>
