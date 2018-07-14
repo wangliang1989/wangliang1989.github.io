@@ -28,6 +28,6 @@ gmt psbasemap -R -J -Ba1g1 -BWSEN  -P -K -O >> $file
 
 ```bash
 # 绘制辅助底图
-gmt set MAP_FRAME_TYPE=inside MAP_GRID_PEN_PRIMARY=1p,blue
+gmt gmtset MAP_FRAME_TYPE=inside MAP_GRID_PEN_PRIMARY=1p,blue
 gmt psbasemap -R0/21/0/29.7 -Jx1/1 -Ba1g1 -BWSEN -Xf0c -Yf0c -P -K -O >> $file;
 ```
