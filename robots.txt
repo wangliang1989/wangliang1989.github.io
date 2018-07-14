@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: http://seismology.xyz/sitemap.xml
+Sitemap: https://seismology.xyz/sitemap.xml

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Git on Seismology - A super blog for seismology</title>
-    <link>http://seismology.xyz/tags/git/</link>
+    <link>https://seismology.xyz/tags/git/</link>
     <description>Recent content in Git on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 04 Dec 2015 12:13:19 +0800</lastBuildDate>
     
-	<atom:link href="http://seismology.xyz/tags/git/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://seismology.xyz/tags/git/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>git 常用命令</title>
-      <link>http://seismology.xyz/post/git-commands/</link>
+      <link>https://seismology.xyz/post/git-commands/</link>
       <pubDate>Fri, 04 Dec 2015 12:13:19 +0800</pubDate>
       
-      <guid>http://seismology.xyz/post/git-commands/</guid>
+      <guid>https://seismology.xyz/post/git-commands/</guid>
       <description>和提交有关 添加或修改文件的修改提交到暂存区(记住：git跟踪的是修改！) git add &amp;lt;fileName&amp;gt; 删除文件的修改提交到暂存区 git rm &amp;lt;fileName&amp;gt; 提交到仓库 git commit -m&amp;quot;</description>
     </item>
     

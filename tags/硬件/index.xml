@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>硬件 on Seismology - A super blog for seismology</title>
-    <link>http://seismology.xyz/tags/%E7%A1%AC%E4%BB%B6/</link>
+    <link>https://seismology.xyz/tags/%E7%A1%AC%E4%BB%B6/</link>
     <description>Recent content in 硬件 on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 11 Mar 2016 15:40:44 +0800</lastBuildDate>
     
-	<atom:link href="http://seismology.xyz/tags/%E7%A1%AC%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://seismology.xyz/tags/%E7%A1%AC%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>闪存盘的修复</title>
-      <link>http://seismology.xyz/post/fix-flash-device/</link>
+      <link>https://seismology.xyz/post/fix-flash-device/</link>
       <pubDate>Fri, 11 Mar 2016 15:40:44 +0800</pubDate>
       
-      <guid>http://seismology.xyz/post/fix-flash-device/</guid>
+      <guid>https://seismology.xyz/post/fix-flash-device/</guid>
       <description>可能是没有安全卸载造成的。症状是说文件系统是只读文件系统，而且不管怎么加权限都是加不了的。修复命令是 sudo fsck -fy /dev/sdb1 注意使用前要确保 sdb1 是要修复的闪存</description>
     </item>
     

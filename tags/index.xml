@@ -2,138 +2,138 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on Seismology - A super blog for seismology</title>
-    <link>http://seismology.xyz/tags/</link>
+    <link>https://seismology.xyz/tags/</link>
     <description>Recent content in Tags on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 04 Dec 2015 12:13:19 +0800</lastBuildDate>
     
-	<atom:link href="http://seismology.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://seismology.xyz/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Git</title>
-      <link>http://seismology.xyz/tags/git/</link>
+      <link>https://seismology.xyz/tags/git/</link>
       <pubDate>Fri, 04 Dec 2015 12:13:19 +0800</pubDate>
       
-      <guid>http://seismology.xyz/tags/git/</guid>
+      <guid>https://seismology.xyz/tags/git/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Jweed</title>
-      <link>http://seismology.xyz/tags/jweed/</link>
+      <link>https://seismology.xyz/tags/jweed/</link>
       <pubDate>Fri, 30 Oct 2015 16:18:08 +0800</pubDate>
       
-      <guid>http://seismology.xyz/tags/jweed/</guid>
+      <guid>https://seismology.xyz/tags/jweed/</guid>
       <description></description>
     </item>
     
     <item>
       <title>事件定位</title>
-      <link>http://seismology.xyz/tags/%E4%BA%8B%E4%BB%B6%E5%AE%9A%E4%BD%8D/</link>
+      <link>https://seismology.xyz/tags/%E4%BA%8B%E4%BB%B6%E5%AE%9A%E4%BD%8D/</link>
       <pubDate>Fri, 28 Apr 2017 21:00:58 +0800</pubDate>
       
-      <guid>http://seismology.xyz/tags/%E4%BA%8B%E4%BB%B6%E5%AE%9A%E4%BD%8D/</guid>
+      <guid>https://seismology.xyz/tags/%E4%BA%8B%E4%BB%B6%E5%AE%9A%E4%BD%8D/</guid>
       <description></description>
     </item>
     
     <item>
       <title>备份中心</title>
-      <link>http://seismology.xyz/tags/%E5%A4%87%E4%BB%BD%E4%B8%AD%E5%BF%83/</link>
+      <link>https://seismology.xyz/tags/%E5%A4%87%E4%BB%BD%E4%B8%AD%E5%BF%83/</link>
       <pubDate>Wed, 14 Dec 2016 10:08:41 +0800</pubDate>
       
-      <guid>http://seismology.xyz/tags/%E5%A4%87%E4%BB%BD%E4%B8%AD%E5%BF%83/</guid>
+      <guid>https://seismology.xyz/tags/%E5%A4%87%E4%BB%BD%E4%B8%AD%E5%BF%83/</guid>
       <description></description>
     </item>
     
     <item>
       <title>字符编码</title>
-      <link>http://seismology.xyz/tags/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</link>
+      <link>https://seismology.xyz/tags/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</link>
       <pubDate>Thu, 15 Dec 2016 21:06:44 +0800</pubDate>
       
-      <guid>http://seismology.xyz/tags/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</guid>
+      <guid>https://seismology.xyz/tags/%E5%AD%97%E7%AC%A6%E7%BC%96%E7%A0%81/</guid>
       <description></description>
     </item>
     
     <item>
       <title>并行</title>
-      <link>http://seismology.xyz/tags/%E5%B9%B6%E8%A1%8C/</link>
+      <link>https://seismology.xyz/tags/%E5%B9%B6%E8%A1%8C/</link>
       <pubDate>Wed, 13 Jan 2016 12:13:19 +0800</pubDate>
       
-      <guid>http://seismology.xyz/tags/%E5%B9%B6%E8%A1%8C/</guid>
+      <guid>https://seismology.xyz/tags/%E5%B9%B6%E8%A1%8C/</guid>
       <description></description>
     </item>
     
     <item>
       <title>应力</title>
-      <link>http://seismology.xyz/tags/%E5%BA%94%E5%8A%9B/</link>
+      <link>https://seismology.xyz/tags/%E5%BA%94%E5%8A%9B/</link>
       <pubDate>Fri, 10 Mar 2017 22:19:17 +0800</pubDate>
       
-      <guid>http://seismology.xyz/tags/%E5%BA%94%E5%8A%9B/</guid>
+      <guid>https://seismology.xyz/tags/%E5%BA%94%E5%8A%9B/</guid>
       <description></description>
     </item>
     
     <item>
       <title>开会经验</title>
-      <link>http://seismology.xyz/tags/%E5%BC%80%E4%BC%9A%E7%BB%8F%E9%AA%8C/</link>
+      <link>https://seismology.xyz/tags/%E5%BC%80%E4%BC%9A%E7%BB%8F%E9%AA%8C/</link>
       <pubDate>Wed, 05 Jul 2017 08:12:00 +0800</pubDate>
       
-      <guid>http://seismology.xyz/tags/%E5%BC%80%E4%BC%9A%E7%BB%8F%E9%AA%8C/</guid>
+      <guid>https://seismology.xyz/tags/%E5%BC%80%E4%BC%9A%E7%BB%8F%E9%AA%8C/</guid>
       <description></description>
     </item>
     
     <item>
       <title>技巧</title>
-      <link>http://seismology.xyz/tags/%E6%8A%80%E5%B7%A7/</link>
+      <link>https://seismology.xyz/tags/%E6%8A%80%E5%B7%A7/</link>
       <pubDate>Sat, 14 Jul 2018 11:10:00 +0800</pubDate>
       
-      <guid>http://seismology.xyz/tags/%E6%8A%80%E5%B7%A7/</guid>
+      <guid>https://seismology.xyz/tags/%E6%8A%80%E5%B7%A7/</guid>
       <description></description>
     </item>
     
     <item>
       <title>接收函数</title>
-      <link>http://seismology.xyz/tags/%E6%8E%A5%E6%94%B6%E5%87%BD%E6%95%B0/</link>
+      <link>https://seismology.xyz/tags/%E6%8E%A5%E6%94%B6%E5%87%BD%E6%95%B0/</link>
       <pubDate>Mon, 07 May 2018 00:21:00 +0800</pubDate>
       
-      <guid>http://seismology.xyz/tags/%E6%8E%A5%E6%94%B6%E5%87%BD%E6%95%B0/</guid>
+      <guid>https://seismology.xyz/tags/%E6%8E%A5%E6%94%B6%E5%87%BD%E6%95%B0/</guid>
       <description></description>
     </item>
     
     <item>
       <title>服务器</title>
-      <link>http://seismology.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
+      <link>https://seismology.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</link>
       <pubDate>Thu, 22 Feb 2018 21:30:00 +0800</pubDate>
       
-      <guid>http://seismology.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
+      <guid>https://seismology.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</guid>
       <description></description>
     </item>
     
     <item>
       <title>硬件</title>
-      <link>http://seismology.xyz/tags/%E7%A1%AC%E4%BB%B6/</link>
+      <link>https://seismology.xyz/tags/%E7%A1%AC%E4%BB%B6/</link>
       <pubDate>Fri, 11 Mar 2016 15:40:44 +0800</pubDate>
       
-      <guid>http://seismology.xyz/tags/%E7%A1%AC%E4%BB%B6/</guid>
+      <guid>https://seismology.xyz/tags/%E7%A1%AC%E4%BB%B6/</guid>
       <description></description>
     </item>
     
     <item>
       <title>重力</title>
-      <link>http://seismology.xyz/tags/%E9%87%8D%E5%8A%9B/</link>
+      <link>https://seismology.xyz/tags/%E9%87%8D%E5%8A%9B/</link>
       <pubDate>Wed, 27 Jun 2018 13:17:00 +0800</pubDate>
       
-      <guid>http://seismology.xyz/tags/%E9%87%8D%E5%8A%9B/</guid>
+      <guid>https://seismology.xyz/tags/%E9%87%8D%E5%8A%9B/</guid>
       <description></description>
     </item>
     
     <item>
       <title>震源机制</title>
-      <link>http://seismology.xyz/tags/%E9%9C%87%E6%BA%90%E6%9C%BA%E5%88%B6/</link>
+      <link>https://seismology.xyz/tags/%E9%9C%87%E6%BA%90%E6%9C%BA%E5%88%B6/</link>
       <pubDate>Thu, 20 Apr 2017 08:12:00 +0800</pubDate>
       
-      <guid>http://seismology.xyz/tags/%E9%9C%87%E6%BA%90%E6%9C%BA%E5%88%B6/</guid>
+      <guid>https://seismology.xyz/tags/%E9%9C%87%E6%BA%90%E6%9C%BA%E5%88%B6/</guid>
       <description></description>
     </item>
     

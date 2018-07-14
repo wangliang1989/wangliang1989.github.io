@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Jweed on Seismology - A super blog for seismology</title>
-    <link>http://seismology.xyz/tags/jweed/</link>
+    <link>https://seismology.xyz/tags/jweed/</link>
     <description>Recent content in Jweed on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Fri, 30 Oct 2015 16:18:08 +0800</lastBuildDate>
     
-	<atom:link href="http://seismology.xyz/tags/jweed/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://seismology.xyz/tags/jweed/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>用 JWEED 和 QQ 邮箱发送 BREQ_FAST 邮件</title>
-      <link>http://seismology.xyz/post/jweed-breakfast/</link>
+      <link>https://seismology.xyz/post/jweed-breakfast/</link>
       <pubDate>Fri, 30 Oct 2015 16:18:08 +0800</pubDate>
       
-      <guid>http://seismology.xyz/post/jweed-breakfast/</guid>
+      <guid>https://seismology.xyz/post/jweed-breakfast/</guid>
       <description>BREQ_FAST 是 通过发送特定格式的邮件到指定的邮箱来申请数据。JWEED 可以生成该特定格式的邮件。 本文将以我组申请01年和02年两年，在东经85度到89</description>
     </item>
     

@@ -2,21 +2,21 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>会议日记 on Seismology - A super blog for seismology</title>
-    <link>http://seismology.xyz/categories/%E4%BC%9A%E8%AE%AE%E6%97%A5%E8%AE%B0/</link>
+    <link>https://seismology.xyz/categories/%E4%BC%9A%E8%AE%AE%E6%97%A5%E8%AE%B0/</link>
     <description>Recent content in 会议日记 on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Wed, 05 Jul 2017 08:12:00 +0800</lastBuildDate>
     
-	<atom:link href="http://seismology.xyz/categories/%E4%BC%9A%E8%AE%AE%E6%97%A5%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://seismology.xyz/categories/%E4%BC%9A%E8%AE%AE%E6%97%A5%E8%AE%B0/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>记我第一次出国——2017年6月休斯顿之行</title>
-      <link>http://seismology.xyz/post/usa-visa/</link>
+      <link>https://seismology.xyz/post/usa-visa/</link>
       <pubDate>Wed, 05 Jul 2017 08:12:00 +0800</pubDate>
       
-      <guid>http://seismology.xyz/post/usa-visa/</guid>
+      <guid>https://seismology.xyz/post/usa-visa/</guid>
       <description>这篇博文介绍一下，我去美国休斯顿参加 SEG 微地震会议的经过，给大家一些办理签证、入境等等的经验。 办理签证 去美国使领馆办理签证前，要先准备好护照。</description>
     </item>
     
