@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://seismology.xyz/post/gmt-gridlines/</loc>
+    <lastmod>2018-07-14T11:10:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>http://seismology.xyz/post/reading-gravity-movement-in-earth-moon-system/</loc>
     <lastmod>2018-06-27T13:17:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -156,6 +163,13 @@
   </url>
   
   <url>
+    <loc>http://seismology.xyz/categories/gmt/</loc>
+    <lastmod>2018-07-14T11:10:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>http://seismology.xyz/tags/jweed/</loc>
     <lastmod>2015-10-30T16:18:08+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -164,14 +178,14 @@
   
   <url>
     <loc>http://seismology.xyz/post/</loc>
-    <lastmod>2018-06-27T13:17:00+08:00</lastmod>
+    <lastmod>2018-07-14T11:10:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>http://seismology.xyz/</loc>
-    <lastmod>2018-06-27T13:17:00+08:00</lastmod>
+    <lastmod>2018-07-14T11:10:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -242,6 +256,13 @@
   <url>
     <loc>http://seismology.xyz/tags/%E5%BC%80%E4%BC%9A%E7%BB%8F%E9%AA%8C/</loc>
     <lastmod>2017-07-05T08:12:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>http://seismology.xyz/tags/%E6%8A%80%E5%B7%A7/</loc>
+    <lastmod>2018-07-14T11:10:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
