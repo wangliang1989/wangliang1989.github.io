@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 14 Jul 2018 11:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 26 Jul 2018 12:10:00 +0800</lastBuildDate>
     
 	<atom:link href="https://seismology.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>用井中检波器发现车笼埔断层中的膨胀源事件</title>
+      <link>https://seismology.xyz/post/reading-ma2012/</link>
+      <pubDate>Thu, 26 Jul 2018 12:10:00 +0800</pubDate>
+      
+      <guid>https://seismology.xyz/post/reading-ma2012/</guid>
+      <description>921 大地震，又称集集大地震，当地时间 1999 年 9 月 21 日凌晨 1 时发生于南投县集集镇，震源深度约 8.0 千米，矩震级 7.6－7.7 级。 这次地震造成 2415 人死亡，2</description>
+    </item>
     
     <item>
       <title>使用网格线做绘图调整</title>
