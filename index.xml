@@ -6,10 +6,19 @@
     <description>Recent content on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Jul 2018 12:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 10 Aug 2018 10:57:00 +0800</lastBuildDate>
     
 	<atom:link href="https://seismology.xyz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>GCMT 地震目录格式</title>
+      <link>https://seismology.xyz/post/gcmt-catlog/</link>
+      <pubDate>Fri, 10 Aug 2018 10:57:00 +0800</pubDate>
+      
+      <guid>https://seismology.xyz/post/gcmt-catlog/</guid>
+      <description>GCMT提供目录的打包下载。下载地址是 http://www.globalcmt.org/CMTfiles.html 下载下来的ndk文件其实是一个文本文件。每一个地震有5行的内容： PDE 2005/01/01 01:20:05.4 13.78 -88.78 193.1 5.0 0.0 EL SALVADOR C200501010120A B: 4 4 40 S: 27 33</description>
+    </item>
     
     <item>
       <title>用井中检波器发现车笼埔断层中的膨胀源事件</title>
