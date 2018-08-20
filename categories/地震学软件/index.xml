@@ -6,10 +6,28 @@
     <description>Recent content in 地震学软件 on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 20 Apr 2017 08:12:00 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 20 Aug 2018 16:56:00 +0800</lastBuildDate>
     
 	<atom:link href="https://seismology.xyz/categories/%E5%9C%B0%E9%9C%87%E5%AD%A6%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Nonlinloc Viewer 安装教程</title>
+      <link>https://seismology.xyz/post/nonlinloc/</link>
+      <pubDate>Mon, 20 Aug 2018 16:56:00 +0800</pubDate>
+      
+      <guid>https://seismology.xyz/post/nonlinloc/</guid>
+      <description>Nonlinloc 是一个基于到时的绝对定位程序，配套了一个 3D 绘图软件 SeismicityViewer。 只可惜读入的文件必须是 hypo 格式，单纯用于绘图太复杂了。这</description>
+    </item>
+    
+    <item>
+      <title>mopad 教程</title>
+      <link>https://seismology.xyz/post/mopad/</link>
+      <pubDate>Sun, 12 Aug 2018 16:56:00 +0800</pubDate>
+      
+      <guid>https://seismology.xyz/post/mopad/</guid>
+      <description>mopad 是一个分析震源机制的软件。 安装 只需要 mopad.py 一个文件。另外需要安装模块 numpy 和 matplotlib。 mopad.py 第一行改为 python2 的文件位置，然后 mopad.py 加入环境变量即可</description>
+    </item>
     
     <item>
       <title>CAPjoint 学习笔记</title>
