@@ -1,7 +1,7 @@
 ---
 title: "Nonlinloc Viewer 安装教程"
-date: 2018-08-12T16:56:00+08:00
-lastmod: 2018-08-12T16:56:00+08:00
+date: 2018-08-20T16:56:00+08:00
+lastmod: 2018-08-20T16:56:00+08:00
 draft: false
 tags: ["绘图"]
 categories: ["地震学软件"]
