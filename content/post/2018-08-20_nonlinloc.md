@@ -20,9 +20,13 @@ Nonlinloc 是一个基于到时的绝对定位程序，配套了一个 3D 绘图
 地址： http://alomax.net/seismicity/SeismicityViewer.html
 
 SeismicityViewer31.jar - 程序本身
+
 vinti.hyp - NonLinLoc Hypocenter-Phase file
+
 vinti.hdr - NonLinLoc Grid Header file
+
 vinti.cont.xyz - topography 3D line file
+
 vinti.text - 3D text file
 
 # 添加环境变量
