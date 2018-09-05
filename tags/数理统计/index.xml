@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数理统计 on Seismology - A super blog for seismology</title>
+    <link>https://seismology.xyz/tags/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/</link>
+    <description>Recent content in 数理统计 on Seismology - A super blog for seismology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Thu, 06 Sep 2018 00:37:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://seismology.xyz/tags/%E6%95%B0%E7%90%86%E7%BB%9F%E8%AE%A1/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>用 R 语言进行线性回归</title>
+      <link>https://seismology.xyz/post/inear-regression-with-r/</link>
+      <pubDate>Thu, 06 Sep 2018 00:37:00 +0800</pubDate>
+      
+      <guid>https://seismology.xyz/post/inear-regression-with-r/</guid>
+      <description>R 语言是知名的统计软件，也可以做一些其他事情。 R 因为高度适应统计，所以是一门很高的语言，比 Matlab 还要高，比如有称为数据框的数据形式。 安装 https://www.r-project.org/ 例子 数</description>
+    </item>
+    
+  </channel>
+</rss>
