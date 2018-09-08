@@ -6,10 +6,19 @@
     <description>Recent content in 文献阅读 on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Thu, 26 Jul 2018 12:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 08 Sep 2018 10:20:00 +0800</lastBuildDate>
     
 	<atom:link href="https://seismology.xyz/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>通过再研究深部地震的GR关系提出深部地震的发震机理的双机制假说</title>
+      <link>https://seismology.xyz/post/reading-zhan2017/</link>
+      <pubDate>Sat, 08 Sep 2018 10:20:00 +0800</pubDate>
+      
+      <guid>https://seismology.xyz/post/reading-zhan2017/</guid>
+      <description>这篇文章是著名青年科学家詹中文于 2017 年发表在 EPSL 上的： Zhan, Z. (2017). Gutenberg–Richter law for deep earthquakes revisited: A dual-mechanism hypothesis. Earth and Planetary Science Letters, 461, 1–7. http://doi.org/10.1016/j.epsl.2016.12.030 本文将介绍这</description>
+    </item>
     
     <item>
       <title>用井中检波器发现车笼埔断层中的膨胀源事件</title>
