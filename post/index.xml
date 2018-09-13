@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 08 Sep 2018 10:20:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 12 Sep 2018 19:30:00 +0800</lastBuildDate>
     
 	<atom:link href="https://seismology.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>S 波的分解</title>
+      <link>https://seismology.xyz/post/s-split/</link>
+      <pubDate>Wed, 12 Sep 2018 19:30:00 +0800</pubDate>
+      
+      <guid>https://seismology.xyz/post/s-split/</guid>
+      <description>今天上课，有个同学问了一个问题：如果转换一下参考系，是不是 SV 波就可以变成 SH 波，SH 波变成 SV 波了？ 其实只要是弄清楚了坐标系如何建立的和 S 波和如</description>
+    </item>
     
     <item>
       <title>通过再研究深部地震的GR关系提出深部地震的发震机理的双机制假说</title>

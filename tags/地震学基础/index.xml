@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>地震学基础 on Seismology - A super blog for seismology</title>
+    <link>https://seismology.xyz/tags/%E5%9C%B0%E9%9C%87%E5%AD%A6%E5%9F%BA%E7%A1%80/</link>
+    <description>Recent content in 地震学基础 on Seismology - A super blog for seismology</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-cn</language>
+    <lastBuildDate>Wed, 12 Sep 2018 19:30:00 +0800</lastBuildDate>
+    
+	<atom:link href="https://seismology.xyz/tags/%E5%9C%B0%E9%9C%87%E5%AD%A6%E5%9F%BA%E7%A1%80/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>S 波的分解</title>
+      <link>https://seismology.xyz/post/s-split/</link>
+      <pubDate>Wed, 12 Sep 2018 19:30:00 +0800</pubDate>
+      
+      <guid>https://seismology.xyz/post/s-split/</guid>
+      <description>今天上课，有个同学问了一个问题：如果转换一下参考系，是不是 SV 波就可以变成 SH 波，SH 波变成 SV 波了？ 其实只要是弄清楚了坐标系如何建立的和 S 波和如</description>
+    </item>
+    
+  </channel>
+</rss>

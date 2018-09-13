@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://seismology.xyz/post/s-split/</loc>
+    <lastmod>2018-09-12T19:30:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://seismology.xyz/post/reading-zhan2017/</loc>
     <lastmod>2018-09-08T10:20:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -227,14 +234,14 @@
   
   <url>
     <loc>https://seismology.xyz/post/</loc>
-    <lastmod>2018-09-08T10:20:00+08:00</lastmod>
+    <lastmod>2018-09-12T19:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seismology.xyz/</loc>
-    <lastmod>2018-09-08T10:20:00+08:00</lastmod>
+    <lastmod>2018-09-12T19:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -248,7 +255,7 @@
   
   <url>
     <loc>https://seismology.xyz/categories/talk/</loc>
-    <lastmod>2017-04-28T21:00:58+08:00</lastmod>
+    <lastmod>2018-09-12T19:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -263,6 +270,13 @@
   <url>
     <loc>https://seismology.xyz/categories/%E4%BC%9A%E8%AE%AE%E6%97%A5%E8%AE%B0/</loc>
     <lastmod>2017-07-05T08:12:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seismology.xyz/tags/%E5%9C%B0%E9%9C%87%E5%AD%A6%E5%9F%BA%E7%A1%80/</loc>
+    <lastmod>2018-09-12T19:30:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
