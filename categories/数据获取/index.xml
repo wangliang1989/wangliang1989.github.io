@@ -6,10 +6,19 @@
     <description>Recent content in 数据获取 on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Fri, 10 Aug 2018 10:57:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 15 Sep 2018 12:07:00 +0800</lastBuildDate>
     
 	<atom:link href="https://seismology.xyz/categories/%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>地震目录介绍</title>
+      <link>https://seismology.xyz/post/catlog-introduce/</link>
+      <pubDate>Sat, 15 Sep 2018 12:07:00 +0800</pubDate>
+      
+      <guid>https://seismology.xyz/post/catlog-introduce/</guid>
+      <description>地震目录御三家：ISC、USGS 和 IRIS。另外因为我们特别关注国内的情况，所以中国地震局的目录也需要关注。 ISC ISC，即国际地震中心，受联合</description>
+    </item>
     
     <item>
       <title>GCMT 地震目录格式</title>
