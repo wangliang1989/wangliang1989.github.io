@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://seismology.xyz/post/draw-beachball-by-hand/</loc>
+    <lastmod>2018-11-15T21:54:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://seismology.xyz/post/catlog-introduce/</loc>
     <lastmod>2018-09-15T12:07:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -241,14 +248,14 @@
   
   <url>
     <loc>https://seismology.xyz/post/</loc>
-    <lastmod>2018-09-15T12:07:00+08:00</lastmod>
+    <lastmod>2018-11-15T21:54:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seismology.xyz/</loc>
-    <lastmod>2018-09-15T12:07:00+08:00</lastmod>
+    <lastmod>2018-11-15T21:54:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -262,7 +269,7 @@
   
   <url>
     <loc>https://seismology.xyz/categories/talk/</loc>
-    <lastmod>2018-09-12T19:30:00+08:00</lastmod>
+    <lastmod>2018-11-15T21:54:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -430,7 +437,7 @@
   
   <url>
     <loc>https://seismology.xyz/tags/%E9%9C%87%E6%BA%90%E6%9C%BA%E5%88%B6/</loc>
-    <lastmod>2018-08-12T16:56:00+08:00</lastmod>
+    <lastmod>2018-11-15T21:54:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
