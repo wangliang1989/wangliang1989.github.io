@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://seismology.xyz/post/wsl/</loc>
+    <lastmod>2018-12-04T00:16:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://seismology.xyz/post/draw-beachball-by-hand/</loc>
     <lastmod>2018-11-15T21:54:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -248,14 +255,21 @@
   
   <url>
     <loc>https://seismology.xyz/post/</loc>
-    <lastmod>2018-11-15T21:54:00+08:00</lastmod>
+    <lastmod>2018-12-04T00:16:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seismology.xyz/tags/sac/</loc>
+    <lastmod>2018-12-04T00:16:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
   
   <url>
     <loc>https://seismology.xyz/</loc>
-    <lastmod>2018-11-15T21:54:00+08:00</lastmod>
+    <lastmod>2018-12-04T00:16:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -297,7 +311,7 @@
   
   <url>
     <loc>https://seismology.xyz/categories/%E5%9C%B0%E9%9C%87%E5%AD%A6%E8%BD%AF%E4%BB%B6/</loc>
-    <lastmod>2018-09-06T00:37:00+08:00</lastmod>
+    <lastmod>2018-12-04T00:16:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
