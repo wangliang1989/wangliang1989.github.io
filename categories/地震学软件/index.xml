@@ -6,10 +6,19 @@
     <description>Recent content in 地震学软件 on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Tue, 04 Dec 2018 00:16:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 22 Dec 2018 16:28:00 +0800</lastBuildDate>
     
 	<atom:link href="https://seismology.xyz/categories/%E5%9C%B0%E9%9C%87%E5%AD%A6%E8%BD%AF%E4%BB%B6/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>cdut 宽频/甚宽频数据整理</title>
+      <link>https://seismology.xyz/post/bbdata/</link>
+      <pubDate>Sat, 22 Dec 2018 16:28:00 +0800</pubDate>
+      
+      <guid>https://seismology.xyz/post/bbdata/</guid>
+      <description>经过快一个月的努力，我把我们 cdut 宽频/甚宽频台站的数据进行了整理，解决了数据截取和仪器响应两个问题。 期望在这里，通过这篇博文，把我的做法推广给</description>
+    </item>
     
     <item>
       <title>Windows Subsystem for Linux 下 sac 的安装</title>
