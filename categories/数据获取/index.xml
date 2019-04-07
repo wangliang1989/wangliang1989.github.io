@@ -6,10 +6,19 @@
     <description>Recent content in 数据获取 on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 15 Sep 2018 12:07:00 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Apr 2019 14:24:00 +0800</lastBuildDate>
     
 	<atom:link href="https://seismology.xyz/categories/%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>南加州地震中心统一社区模型</title>
+      <link>https://seismology.xyz/post/ucvmc/</link>
+      <pubDate>Sun, 07 Apr 2019 14:24:00 +0800</pubDate>
+      
+      <guid>https://seismology.xyz/post/ucvmc/</guid>
+      <description>南加州地震中心统一社区模型提供的是美国加州的参考模型，下简称加州模型。 准备安装环境 加州模型的安装需要 python2 的环境，理论可以在 Linux 和 Mac 上安装，不过我</description>
+    </item>
     
     <item>
       <title>地震目录介绍</title>

@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>复杂的地球重力场——重力学扫盲学习笔记一 - Seismology - A super blog for seismology</title>
+  <title>南加州地震中心统一社区模型 - Seismology - A super blog for seismology</title>
   <meta name="renderer" content="webkit" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"/>
 
@@ -17,7 +17,7 @@
 
 
 <meta name="author" content="王亮" />
-  <meta name="description" content="从这个星期开始，文献阅读板块将连载重力学和固体潮的一些基础知识。我的重力学学得很不好。 现在读博士，遇到了上课很认真的老师，学到了一些知识，对" />
+  <meta name="description" content="南加州地震中心统一社区模型提供的是美国加州的参考模型，下简称加州模型。 准备安装环境 加州模型的安装需要 python2 的环境，理论可以在 Linux 和 Mac 上安装，不过我" />
 
 
 
@@ -28,7 +28,7 @@
 <meta name="generator" content="Hugo 0.54.0" />
 
 
-<link rel="canonical" href="https://seismology.xyz/post/reading-gravity-complexity/" />
+<link rel="canonical" href="https://seismology.xyz/post/ucvmc/" />
 
 <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
 <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
@@ -48,27 +48,27 @@
 
 
 
-<meta property="og:title" content="复杂的地球重力场——重力学扫盲学习笔记一" />
-<meta property="og:description" content="从这个星期开始，文献阅读板块将连载重力学和固体潮的一些基础知识。我的重力学学得很不好。 现在读博士，遇到了上课很认真的老师，学到了一些知识，对" />
+<meta property="og:title" content="南加州地震中心统一社区模型" />
+<meta property="og:description" content="南加州地震中心统一社区模型提供的是美国加州的参考模型，下简称加州模型。 准备安装环境 加州模型的安装需要 python2 的环境，理论可以在 Linux 和 Mac 上安装，不过我" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://seismology.xyz/post/reading-gravity-complexity/" />
-<meta property="article:published_time" content="2018-05-14T20:21:00&#43;08:00"/>
-<meta property="article:modified_time" content="2018-05-14T20:21:00&#43;08:00"/>
+<meta property="og:url" content="https://seismology.xyz/post/ucvmc/" />
+<meta property="article:published_time" content="2019-04-07T14:24:00&#43;08:00"/>
+<meta property="article:modified_time" content="2019-04-07T14:24:00&#43;08:00"/>
 
-<meta itemprop="name" content="复杂的地球重力场——重力学扫盲学习笔记一">
-<meta itemprop="description" content="从这个星期开始，文献阅读板块将连载重力学和固体潮的一些基础知识。我的重力学学得很不好。 现在读博士，遇到了上课很认真的老师，学到了一些知识，对">
-
-
-<meta itemprop="datePublished" content="2018-05-14T20:21:00&#43;08:00" />
-<meta itemprop="dateModified" content="2018-05-14T20:21:00&#43;08:00" />
-<meta itemprop="wordCount" content="744">
+<meta itemprop="name" content="南加州地震中心统一社区模型">
+<meta itemprop="description" content="南加州地震中心统一社区模型提供的是美国加州的参考模型，下简称加州模型。 准备安装环境 加州模型的安装需要 python2 的环境，理论可以在 Linux 和 Mac 上安装，不过我">
 
 
+<meta itemprop="datePublished" content="2019-04-07T14:24:00&#43;08:00" />
+<meta itemprop="dateModified" content="2019-04-07T14:24:00&#43;08:00" />
+<meta itemprop="wordCount" content="461">
 
-<meta itemprop="keywords" content="重力," />
+
+
+<meta itemprop="keywords" content="参考模型," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="复杂的地球重力场——重力学扫盲学习笔记一"/>
-<meta name="twitter:description" content="从这个星期开始，文献阅读板块将连载重力学和固体潮的一些基础知识。我的重力学学得很不好。 现在读博士，遇到了上课很认真的老师，学到了一些知识，对"/>
+<meta name="twitter:title" content="南加州地震中心统一社区模型"/>
+<meta name="twitter:description" content="南加州地震中心统一社区模型提供的是美国加州的参考模型，下简称加州模型。 准备安装环境 加州模型的安装需要 python2 的环境，理论可以在 Linux 和 Mac 上安装，不过我"/>
 
 <!--[if lte IE 9]>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -139,13 +139,13 @@
           <article class="post">
     
     <header class="post-header">
-      <h1 class="post-title">复杂的地球重力场——重力学扫盲学习笔记一</h1>
+      <h1 class="post-title">南加州地震中心统一社区模型</h1>
 
       <div class="post-meta">
-        <span class="post-time"> 2018-05-14 </span>
+        <span class="post-time"> 2019-04-07 </span>
         <div class="post-category">
             
-              <a href="/categories/%E6%96%87%E7%8C%AE%E9%98%85%E8%AF%BB/"> 文献阅读 </a>
+              <a href="/categories/%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96/"> 数据获取 </a>
             
           </div>
         
@@ -161,8 +161,10 @@
   <div class="post-toc-content">
     <nav id="TableOfContents">
 <ul>
-<li><a href="#牛顿力学中的非惯性系">牛顿力学中的非惯性系</a></li>
-<li><a href="#重力和重力场">重力和重力场</a></li>
+<li><a href="#准备安装环境">准备安装环境</a></li>
+<li><a href="#下载源码">下载源码</a></li>
+<li><a href="#下载大型数据文件">下载大型数据文件</a></li>
+<li><a href="#安装">安装</a></li>
 </ul>
 </nav>
   </div>
@@ -172,45 +174,69 @@
     <div class="post-content">
       
 
-<p>从这个星期开始，文献阅读板块将连载重力学和固体潮的一些基础知识。我的重力学学得很不好。
-现在读博士，遇到了上课很认真的老师，学到了一些知识，对重力学梗概有了一定了解。</p>
+<p>南加州地震中心统一社区模型提供的是美国加州的参考模型，下简称加州模型。</p>
 
-<h1 id="牛顿力学中的非惯性系">牛顿力学中的非惯性系</h1>
+<h1 id="准备安装环境">准备安装环境</h1>
 
-<p>考虑到一些同学可能把牛顿忘了，所以复习一下高中牛顿力学。
-牛顿力学原本只能用于惯性系，即参考系必须做匀速直线运动或者静止。
-如果参考系不是做匀速直线运动或者静止，即非惯性系，所有物体在进行牛顿力学分析时必须加上一个惯性力：</p>
+<p>加州模型的安装需要 python2 的环境，理论可以在 Linux 和 Mac 上安装，不过我仅在 Linux 上成功。
+目前，多数新 python 程序已经是 python3，使用 anaconda 可以临时启用 python2 的环境。
+安装 anaconda 可以参考</p>
 
-<p>$$F=-ma$$</p>
+<p><a href="https://blog.seisman.info/anaconda/">https://blog.seisman.info/anaconda/</a></p>
 
-<p>非惯性系是牛顿力学的漏洞，用不存在的惯性力把这个洞临时补上。相对论最终解决了这个问题。</p>
+<p>除了 python2，还需要安装 GNU C 和 Fortran，通常这本身已经安装了。</p>
 
-<h1 id="重力和重力场">重力和重力场</h1>
+<h1 id="下载源码">下载源码</h1>
 
-<p>在中学阶段，地球上物体所受的重力的公式是这样的：</p>
+<p>使用 git 下载源码：</p>
 
-<p>$$mg = G\frac{m_1m_2}{r^2} - m\frac{v^2}{r}$$</p>
+<pre><code class="language-bash">git clone https://github.com/SCECCode/UCVMC.git
+</code></pre>
 
-<p>这个公式忽略掉了太阳、月球的万有引力，并且认为地球是静止不动的，地球上的物体的运动仅仅是随着地球自转。
-如果在重力学中，继续承认这些假设，那固体潮什么的就不存在了。
-所以我们得出重力学中重力的严格定义:
-重力是地球表面观察者受到的所有天体引力之和，去除维持观察者在宇宙中做变加速运动所需分力以后剩余的部分：</p>
+<h1 id="下载大型数据文件">下载大型数据文件</h1>
 
-<p>$$\overrightarrow{G}(\overrightarrow{r},t) = \overrightarrow{F_S}(\overrightarrow{r},t) + \overrightarrow{F_L}(\overrightarrow{r},t) + \overrightarrow{F_E}(\overrightarrow{r},t) - \overrightarrow{C}(\overrightarrow{r},t)$$</p>
+<pre><code class="language-bash">cd UCVMC/largefiles
+git checkout dev # 如果要使用开发版
+conda activate python2 # 激活 python2 环境
+./get_large_files.py # 下载大型数据文件
+</code></pre>
 
-<p>$\overrightarrow{F_S}(\overrightarrow{r},t))$ 是太阳引力，
-$\overrightarrow{F_L}(\overrightarrow{r},t)$ 是月球引力，
-$\overrightarrow{F_E}(\overrightarrow{r},t))$ 是地球引力，
-$\overrightarrow{C}(\overrightarrow{r},t)$ 是向心力。</p>
+<p>数据文件比较大，可能需要较长的时间。数据下载完毕后会显示：</p>
 
-<p>地球上的物体所做的运动是非常复杂的。首先，地球上的物体随着地球在自转，和围绕太阳公转。
-然后，还因为固体潮的原因，地球的表面还会有起伏。
-不过，在刚刚开始的时候，使用简化定义。
-简化定义为：忽略地外天体的作用，地球重力场可以定义为地球引力和观察者围绕地球做自由圆周运动所需向心力（惯性离心力）之差（之和）。
-此时，重力仅仅是空间的函数。</p>
+<pre><code class="language-text">Completed all required downloads. This computer is now ready to build and install the UCVMC programs and scripts.
+</code></pre>
 
-<p>重力场是单位质量受到的重力。重力单位是加速度单位。在 SI 单位制中是 $m/s^2$。在厘米克秒 cgs 单位制中是 $cm/s^2$，称为伽利略 $Gal$。
-另外，$1mGal = 10^{-5} m/s^2$。国际重力单位为 $gu=10^{-6}m/s^2$。</p>
+<p>然后，需要检查数据下载是否成功</p>
+
+<pre><code class="language-bash">./check_largefiles_md5.py
+</code></pre>
+
+<p>如果输出如下，表示下载成功。这个数据检查是用的md5，该脚本在 Mac 上无法使用。</p>
+
+<pre><code class="language-text">Checked 10 UCVM large files with: 10 OK, and: 0 errors
+</code></pre>
+
+<h1 id="安装">安装</h1>
+
+<pre><code class="language-bash">cd .. # 进入UCVMC/
+./stage_large_files.py # 移动数据文件
+./ucvm_setup.py # 开始安装
+</code></pre>
+
+<p>脚本会询问一些安装问题。安装过程需要较长时间。
+安装完毕后，脚本会输出以下类似内容，将其加入环境变量</p>
+
+<pre><code class="language-text">export LD_LIBRARY_PATH=/home/peterpan/ucvm-17.1.0/lib/euclid3/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/home/peterpan/ucvm-17.1.0/lib/proj-4/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/home/peterpan/ucvm-17.1.0/model/cvms426/lib:$LD_LIBRARY_PATH
+export LD_LIBRARY_PATH=/home/peterpan/ucvm-17.1.0/model/cencal/lib:$LD_LIBRARY_PATH
+export PYTHONPATH=${PYTHONPATH}:/home/peterpan/ucvm-17.1.0/utilities:/home/peterpan/ucvm-17.1.0/ucvm-17.1.0/utilities/pycvm
+</code></pre>
+
+<p>然后在安装路径下（不是 git 下载的源码目录）输入以下命令，如果正常输出结果，即表示安装成功。</p>
+
+<pre><code class="language-bash">./bin/ucvm_query -f ./conf/ucvm.conf -m cvms &lt; ./tests/test_latlons.txt
+</code></pre>
 
     </div>
 
@@ -222,7 +248,7 @@ $\overrightarrow{C}(\overrightarrow{r},t)$ 是向心力。</p>
   </p>
   <p class="copyright-item">
     <span class="item-title">上次更新</span>
-    <span class="item-content">2018-05-14</span>
+    <span class="item-content">2019-04-07</span>
   </p>
   
   <p class="copyright-item">
@@ -254,21 +280,16 @@ $\overrightarrow{C}(\overrightarrow{r},t)$ 是向心力。</p>
     <footer class="post-footer">
       <div class="post-tags">
           
-          <a href="/tags/%E9%87%8D%E5%8A%9B/">重力</a>
+          <a href="/tags/%E5%8F%82%E8%80%83%E6%A8%A1%E5%9E%8B/">参考模型</a>
           
         </div>
 
       
       <nav class="post-nav">
         
-          <a class="prev" href="/post/reading-gravity-potential/">
-            <i class="iconfont icon-left"></i>
-            <span class="prev-text nav-default">重力位——重力学扫盲学习笔记二</span>
-            <span class="prev-text nav-mobile">上一篇</span>
-          </a>
         
-          <a class="next" href="/post/reading-receiver-function/">
-            <span class="next-text nav-default">接收函数方法经典文章阅读</span>
+          <a class="next" href="/post/bbdata/">
+            <span class="next-text nav-default">cdut 宽频/甚宽频数据整理</span>
             <span class="prev-text nav-mobile">下一篇</span>
             <i class="iconfont icon-right"></i>
           </a>
