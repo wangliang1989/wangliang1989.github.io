@@ -6,10 +6,19 @@
     <description>Recent content in Posts on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sun, 07 Apr 2019 14:24:00 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 09 Apr 2019 12:44:00 +0800</lastBuildDate>
     
 	<atom:link href="https://seismology.xyz/post/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Obspy 下载数据</title>
+      <link>https://seismology.xyz/post/obspy_download_data/</link>
+      <pubDate>Tue, 09 Apr 2019 12:44:00 +0800</pubDate>
+      
+      <guid>https://seismology.xyz/post/obspy_download_data/</guid>
+      <description>Obspy 可以用于下载波形数据，主要优势在于自动支持「所有」数据中心。 准备安装环境 首先，需要安装 anaconda，可以参考 https://blog.seisman.info/anaconda/ 开始安装 conda config --add channels conda-forge conda create -n</description>
+    </item>
     
     <item>
       <title>南加州地震中心统一社区模型</title>

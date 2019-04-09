@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://seismology.xyz/post/obspy_download_data/</loc>
+    <lastmod>2019-04-09T12:44:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://seismology.xyz/post/ucvmc/</loc>
     <lastmod>2019-04-07T14:24:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -269,7 +276,7 @@
   
   <url>
     <loc>https://seismology.xyz/post/</loc>
-    <lastmod>2019-04-07T14:24:00+08:00</lastmod>
+    <lastmod>2019-04-09T12:44:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -283,7 +290,7 @@
   
   <url>
     <loc>https://seismology.xyz/</loc>
-    <lastmod>2019-04-07T14:24:00+08:00</lastmod>
+    <lastmod>2019-04-09T12:44:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -409,7 +416,7 @@
   
   <url>
     <loc>https://seismology.xyz/categories/%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96/</loc>
-    <lastmod>2019-04-07T14:24:00+08:00</lastmod>
+    <lastmod>2019-04-09T12:44:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -431,6 +438,13 @@
   <url>
     <loc>https://seismology.xyz/tags/%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     <lastmod>2018-02-22T21:30:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0</priority>
+  </url>
+  
+  <url>
+    <loc>https://seismology.xyz/tags/%E6%B3%A2%E5%BD%A2%E6%95%B0%E6%8D%AE/</loc>
+    <lastmod>2019-04-09T12:44:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
