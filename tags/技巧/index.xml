@@ -6,10 +6,19 @@
     <description>Recent content in 技巧 on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 14 Jul 2018 11:10:00 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 09 Nov 2019 22:36:00 +0800</lastBuildDate>
     
 	<atom:link href="https://seismology.xyz/tags/%E6%8A%80%E5%B7%A7/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>投影到学院楼底楼电视的办法</title>
+      <link>https://seismology.xyz/post/seisshow/</link>
+      <pubDate>Sat, 09 Nov 2019 22:36:00 +0800</pubDate>
+      
+      <guid>https://seismology.xyz/post/seisshow/</guid>
+      <description>这篇文档是介绍如何把办公室的电脑屏幕投影到底楼电视机的办法。 如何开机 这台电脑经常无法开机，电脑可能有质量问题。 在插上电源后，按开机键，主机上</description>
+    </item>
     
     <item>
       <title>使用网格线做绘图调整</title>
