@@ -23,5 +23,5 @@ Data Types & Experiment Information 部分的信息，你需要询问数据的�
 
 申请提交之后，IRIS DMC 会在一个工作日之内完成处理。
 首先 IRIS 的工作人员会给你发送一份邮件说明申请的结果和大致的情况。第二封邮件为系统发出，内部包含了密码。
-密码有两个，一个是 auth-password，另一个 是ssl-password。
+密码有两个，一个是 auth-password，另一个是 ssl-password。
 需要再次强调的是，这是账户的密码。假设你获得了多个台网的受限制数据的授权，IRIS 不会给你更多的密码，而是把你的邮箱地址列入多个台网的允许列表。
