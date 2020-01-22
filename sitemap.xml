@@ -3,6 +3,13 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://seismology.xyz/post/raspbian/</loc>
+    <lastmod>2019-11-13T20:40:00+08:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://seismology.xyz/post/seisshow/</loc>
     <lastmod>2019-11-09T22:36:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
@@ -283,7 +290,7 @@
   
   <url>
     <loc>https://seismology.xyz/post/</loc>
-    <lastmod>2019-11-09T22:36:00+08:00</lastmod>
+    <lastmod>2019-11-13T20:40:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -297,7 +304,7 @@
   
   <url>
     <loc>https://seismology.xyz/</loc>
-    <lastmod>2019-11-09T22:36:00+08:00</lastmod>
+    <lastmod>2019-11-13T20:40:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -402,7 +409,7 @@
   
   <url>
     <loc>https://seismology.xyz/tags/%E6%8A%80%E5%B7%A7/</loc>
-    <lastmod>2019-11-09T22:36:00+08:00</lastmod>
+    <lastmod>2019-11-13T20:40:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>
@@ -479,7 +486,7 @@
   
   <url>
     <loc>https://seismology.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</loc>
-    <lastmod>2019-11-09T22:36:00+08:00</lastmod>
+    <lastmod>2019-11-13T20:40:00+08:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0</priority>
   </url>

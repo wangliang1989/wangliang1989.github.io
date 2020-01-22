@@ -6,10 +6,19 @@
     <description>Recent content on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <lastBuildDate>Sat, 09 Nov 2019 22:36:00 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 13 Nov 2019 20:40:00 +0800</lastBuildDate>
     
 	<atom:link href="https://seismology.xyz/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>树莓派的安装</title>
+      <link>https://seismology.xyz/post/raspbian/</link>
+      <pubDate>Wed, 13 Nov 2019 20:40:00 +0800</pubDate>
+      
+      <guid>https://seismology.xyz/post/raspbian/</guid>
+      <description>本文介绍树莓派系统的安装，包含树莓派常用的软件。 如何购买 树莓派的购买可以在立创、京东这些地方购买，通常都可以开具发票。 购买的时候光买一个板子</description>
+    </item>
     
     <item>
       <title>投影到学院楼底楼电视的办法</title>
