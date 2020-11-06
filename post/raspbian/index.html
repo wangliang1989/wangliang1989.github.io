@@ -58,7 +58,7 @@
 <meta itemprop="description" content="本文介绍树莓派系统的安装，包含树莓派常用的软件。 如何购买 树莓派的购买可以在立创、京东这些地方购买，通常都可以开具发票。 购买的时候光买一个板子">
 <meta itemprop="datePublished" content="2019-11-13T20:40:00&#43;08:00" />
 <meta itemprop="dateModified" content="2019-11-13T20:40:00&#43;08:00" />
-<meta itemprop="wordCount" content="641">
+<meta itemprop="wordCount" content="620">
 
 
 
@@ -165,29 +165,23 @@
 <h1 id="如何购买">如何购买</h1>
 <p>树莓派的购买可以在立创、京东这些地方购买，通常都可以开具发票。
 购买的时候光买一个板子是不够的，以下三样是必须的：树莓派主板、一张 10class 级别以上的 TF 卡，最小 8G，最大 128G 和一个电源</p>
-<p>电源要么是专用的树莓派电源，要么是树莓派专用的 USB 转 type-C 公对公转接线。树莓派 4 开始需要 3A 以上的输出，是无法用充电宝启动的。</p>
+<p>电源要么是专用的树莓派电源，要么是树莓派专用的 USB 转 type-C 对公转接线。树莓派 4 开始需要 3A以上的输出，是无法用充电宝启动的。</p>
 <h1 id="下载安装包">下载安装包</h1>
 <p>需要的安装包是 raspbian light，专用的TF卡写入软件是 Etcher。
-Etcher没有特别的选项，按照流程走就可以了，然后在 boot 路径下，添加一个文件名为 ssh 的文件。
-因为我们不用界面，所以 GPU 少分配内存，打开 config.txt，在最下面追加一行文本“gpu_mem=16”：</p>
+Etcher没有特别的选项，按照流程走就可以了，然后再boot路径下，添加一个文件名为 ssh 的文件。
+因为我们不用界面，所以GPU少分配内存，打开config.txt，在最下面追加一行文本“gpu_mem=16”：</p>
 <h1 id="启动和登录树莓派">启动和登录树莓派</h1>
 <p>通电后，指示灯明亮是判断系统正常启动的必要条件，而不是充分条件。充电宝供电也可以点亮指示灯，然而系统实际没有启动。
 所以，一定注意，充电宝是不能启动树莓派 4 的。
 要接入系统的关键是知道树莓派的 ip 地址。在有路由器的情况下，可以在链接设备里看到树莓派。
 个别路由器需要在 ARP 绑定里才能看到。果友可以在 App Store 里面下载 Lanscan。</p>
-<p>在知道树莓派地址后，就可以登录，登录后应该立即更改密码，然后退出，添加密钥：</p>
+<p>在知道树莓派地址后，就可以登录，登录后应该立即更改密码，然后推出，添加密钥：</p>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">ssh-copy-id pi@192.168.0.105
 ssh-copy-id -i .ssh/id_rsa.pub root@172.xx.yy.zzz <span style="color:#75715e"># 添加特定的公钥</span>
 </code></pre></div><h1 id="系统配置">系统配置</h1>
 <p>软件源改清华：https://mirrors.tuna.tsinghua.edu.cn/help/raspbian/
 需要什么安装什么就是了，树莓派本质上就是一台 Linux 电脑。</p>
-<h1 id="如何连接-wi-fi">如何连接 Wi-Fi</h1>
-<p>在文件 /etc/wpa_supplicant/wpa_supplicant.conf 中添加：</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">network<span style="color:#f92672">={</span>
-    ssid<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;The SSID of your network (eg. Network name)&#34;</span>
-    psk<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;Your Wifi Password&#34;</span>
-<span style="color:#f92672">}</span>
-</code></pre></div>
+
     </div>
 
     
