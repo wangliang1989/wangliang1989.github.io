@@ -16,10 +16,8 @@ slug: apply_for_authorization_of_restricted_data
 
 IRIS DMC 上并不是所有数据都开放。有一些台站需要授权才能下载。申请使用权的地址是 http://ds.iris.edu/ds/nodes/dmc/forms/restricted-data-registration/
 
-这里面要填写一些信息。这里的信息都不能乱填，是人工审核的，务必保证真实。
-About You 部分是填写自己的信息。如果申请成功，IRIS 会给予两个只和邮箱地址绑定的密码。
-Data Types & Experiment Information 部分的信息，你需要询问数据的操作者或者说提供者，尤其是其中的台网密码（Network Password）。
-没错，这个就要靠自己的勾兑了。
+这里面要填写一些信息。这里的信息都不能乱填，是人工审核的。**这里应该由数据操作者填写。**
+About You 部分是填写使用者信息。如果申请成功，IRIS 会给予两个只和该邮箱地址绑定的密码。
 
 申请提交之后，IRIS DMC 会在一个工作日之内完成处理。
 首先 IRIS 的工作人员会给你发送一份邮件说明申请的结果和大致的情况。第二封邮件为系统发出，内部包含了密码。
