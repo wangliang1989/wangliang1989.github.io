@@ -25,7 +25,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.73.0" />
 
 
 <link rel="canonical" href="https://seismology.xyz/post/ssh-landing/" />
@@ -52,21 +52,17 @@
 <meta property="og:description" content="假期在家想 SSH 登陆学校的电脑，有如下障碍：无公网 IP、学校断网和学校断电。 用端口转发解决没有公网 IP 的问题 互联网最基本的结构性质就是其非对称性。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://seismology.xyz/post/ssh-landing/" />
-<meta property="article:published_time" content="2018-02-22T21:30:00&#43;08:00"/>
-<meta property="article:modified_time" content="2018-02-22T21:30:00&#43;08:00"/>
-
+<meta property="article:published_time" content="2018-02-22T21:30:00+08:00" />
+<meta property="article:modified_time" content="2018-02-22T21:30:00+08:00" />
 <meta itemprop="name" content="假期在家 SSH 登陆学校电脑">
 <meta itemprop="description" content="假期在家想 SSH 登陆学校的电脑，有如下障碍：无公网 IP、学校断网和学校断电。 用端口转发解决没有公网 IP 的问题 互联网最基本的结构性质就是其非对称性。">
-
-
 <meta itemprop="datePublished" content="2018-02-22T21:30:00&#43;08:00" />
 <meta itemprop="dateModified" content="2018-02-22T21:30:00&#43;08:00" />
 <meta itemprop="wordCount" content="848">
 
 
 
-<meta itemprop="keywords" content="服务器," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="服务器," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="假期在家 SSH 登陆学校电脑"/>
 <meta name="twitter:description" content="假期在家想 SSH 登陆学校的电脑，有如下障碍：无公网 IP、学校断网和学校断电。 用端口转发解决没有公网 IP 的问题 互联网最基本的结构性质就是其非对称性。"/>
 
@@ -160,89 +156,59 @@
   
   <div class="post-toc-content">
     <nav id="TableOfContents">
-<ul>
-<li><a href="#用端口转发解决没有公网-ip-的问题">用端口转发解决没有公网 IP 的问题</a>
-<ul>
-<li><a href="#购买和配置-natapp-服务">购买和配置 NATAPP 服务</a></li>
-</ul></li>
-<li><a href="#学校断网和断电">学校断网和断电</a>
-<ul>
-<li><a href="#定时和来电开机">定时和来电开机</a></li>
-<li><a href="#重新登陆校园网">重新登陆校园网</a></li>
-</ul></li>
-<li><a href="#参考">参考</a></li>
-</ul>
+  <ul>
+    <li><a href="#购买和配置-natapp-服务">购买和配置 NATAPP 服务</a></li>
+  </ul>
+
+  <ul>
+    <li><a href="#定时和来电开机">定时和来电开机</a></li>
+    <li><a href="#重新登陆校园网">重新登陆校园网</a></li>
+  </ul>
 </nav>
   </div>
 </div>
 
     
     <div class="post-content">
-      
-
-<p>假期在家想 SSH 登陆学校的电脑，有如下障碍：无公网 IP、学校断网和学校断电。</p>
-
+      <p>假期在家想 SSH 登陆学校的电脑，有如下障碍：无公网 IP、学校断网和学校断电。</p>
 <h1 id="用端口转发解决没有公网-ip-的问题">用端口转发解决没有公网 IP 的问题</h1>
-
 <p>互联网最基本的结构性质就是其非对称性。当你的服务器不具有公网 IP 的时候，服务端必须在同一个局域网内才能实现 SSH 登陆。
 这就好比北京的电话相互拨打不需要输入区号的，但是如果要给上海打就需要区号了。公网 IP 在国内是非常稀缺的互联网资源，学校是不会给学生的（听说中科大给）。
 可以使用「端口转发」来进行中转，以回避这个问题。</p>
-
 <h2 id="购买和配置-natapp-服务">购买和配置 NATAPP 服务</h2>
-
 <p>我用的端口转发服务是 NATAPP，国内的，速度稳定性有保障，完全合法。我建议购买 VIP_1 型，实惠够用。</p>
-
 <p>隧道本身的配置见 NATAPP 的官方文档即可（<strong>配置时注意本地端口改为 22</strong>）。</p>
-
 <p>然后，需要将以下内容加入开机启动服务：</p>
-
-<pre><code class="language-bash">nohup /usr/local/natapp -authtoken=abc123 -log=stdout &amp;# 开机启动 NATAPP
-</code></pre>
-
-<p>Ubuntu/Mint 用户在 /etc/rc.local 中加入。Centos7 用户在 /etc/rc.d/rc.local 中加入，并且要赋予可执行权限。</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">nohup /usr/local/natapp -authtoken<span style="color:#f92672">=</span>abc123 -log<span style="color:#f92672">=</span>stdout &amp;<span style="color:#75715e"># 开机启动 NATAPP</span>
+</code></pre></div><p>Ubuntu/Mint 用户在 /etc/rc.local 中加入。Centos7 用户在 /etc/rc.d/rc.local 中加入，并且要赋予可执行权限。</p>
 <h1 id="学校断网和断电">学校断网和断电</h1>
-
 <p>因为各种原因，学校可能会断网和断电，下面罗列了一些方法以便在网络和电力恢复后能重新登陆。</p>
-
 <h2 id="定时和来电开机">定时和来电开机</h2>
-
 <p>目前，多数 PC 计算机可以通过设置 BIOS 实现定时开机和断电后来电开机。</p>
-
 <h2 id="重新登陆校园网">重新登陆校园网</h2>
-
 <p>断电后，断网后肯定是需要重新校园网登陆的。桂工和成理用的是 drcom 网页登陆。
 首先需要抓取 HTTP POST 请求，看看认证过程中究竟给认证服务器发送了什么内容。
 首先用 Chrome 浏览器打开认证页面。然后，右键选择检查/inspect，打开开发者工具， 在新打开的右侧的顶端找到 Network 并点击，再勾选 Preserve log。
 在登录页面填写帐号信息，点击登录， 即可看到相关的 HTTP 请求。
 在 ALL 中找到 Request Method 为 POST 的那个，通常就是第一个，Name 是一个 IP 地址那个，然后右键-&gt;Copy-&gt; Copy as cURL，即可得到认证所需的 curl 命令。
 使用该命令即可进行登录认证。</p>
-
-<p><img src="/media/2018041101.png" alt="pic" /></p>
-
+<p><img src="/media/2018041101.png" alt="pic"></p>
 <p>在开机启动服务中加入以下内容：</p>
-
-<pre><code class="language-bash">/home/peterpan/bin/ping &amp;
-# 开机启动脚 ping，千万别忘了文件 ping 要给予可执行权限，这条语句要在启动 NATAPP 那条之前
-</code></pre>
-
-<p>ping 的内容如下</p>
-
-<pre><code class="language-perl">#!/usr/bin/env perl
-use strict;
-use warnings;
-while () {
-    system &quot;sh /home/peterpan/bin/login&quot;;# 登陆校园网，文件 curl 的内容是上面得到的 curl 命令
-    for (my $i = 0;$i &lt;= 20;$i++) {
-        system &quot;ping www.natapp.cn -c 5&quot;;# 间隔 300 秒 ping 5 次防止掉线
-        sleep(300);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">/home/peterpan/bin/ping &amp;
+<span style="color:#75715e"># 开机启动脚 ping，千万别忘了文件 ping 要给予可执行权限，这条语句要在启动 NATAPP 那条之前</span>
+</code></pre></div><p>ping 的内容如下</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#75715e">#!/usr/bin/env perl</span>
+<span style="color:#66d9ef">use</span> strict;
+<span style="color:#66d9ef">use</span> warnings;
+<span style="color:#66d9ef">while</span> () {
+    system <span style="color:#e6db74">&#34;sh /home/peterpan/bin/login&#34;</span>;<span style="color:#75715e"># 登陆校园网，文件 curl 的内容是上面得到的 curl 命令</span>
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">my</span> $i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;$i <span style="color:#f92672">&lt;=</span> <span style="color:#ae81ff">20</span>;$i<span style="color:#f92672">++</span>) {
+        system <span style="color:#e6db74">&#34;ping www.natapp.cn -c 5&#34;</span>;<span style="color:#75715e"># 间隔 300 秒 ping 5 次防止掉线</span>
+        sleep(<span style="color:#ae81ff">300</span>);
     }
-    system &quot;service networking restart&quot;;# 间隔 6000 秒无论怎样重启一次网络服务
+    system <span style="color:#e6db74">&#34;service networking restart&#34;</span>;<span style="color:#75715e"># 间隔 6000 秒无论怎样重启一次网络服务</span>
 }
-</code></pre>
-
-<h1 id="参考">参考</h1>
-
+</code></pre></div><h1 id="参考">参考</h1>
 <p><a href="https://butui.me/post/use-curl-for-drcom-webauth/">https://butui.me/post/use-curl-for-drcom-webauth/</a></p>
 
     </div>

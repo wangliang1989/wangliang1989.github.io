@@ -1,9 +1,9 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Talk on Seismology - A super blog for seismology</title>
+    <title>talk on Seismology - A super blog for seismology</title>
     <link>https://seismology.xyz/categories/talk/</link>
-    <description>Recent content in Talk on Seismology - A super blog for seismology</description>
+    <description>Recent content in talk on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
     <lastBuildDate>Thu, 15 Nov 2018 21:54:00 +0800</lastBuildDate>

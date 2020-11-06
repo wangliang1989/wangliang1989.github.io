@@ -25,7 +25,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.73.0" />
 
 
 <link rel="canonical" href="https://seismology.xyz/post/wsl/" />
@@ -52,21 +52,17 @@
 <meta property="og:description" content="WSL 是什么？ WSL 是 Windows Subsystem for Linux 的简称，是为在 Windows 10 上能够原生运行 Linux 二进制可执行文件而制作的兼容层。 它是由微软与 Canonical 公司合作开发，目标是使纯正的 Ubuntu 14.0" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://seismology.xyz/post/wsl/" />
-<meta property="article:published_time" content="2018-12-04T00:16:00&#43;08:00"/>
-<meta property="article:modified_time" content="2018-12-04T00:16:00&#43;08:00"/>
-
+<meta property="article:published_time" content="2018-12-04T00:16:00+08:00" />
+<meta property="article:modified_time" content="2018-12-04T00:16:00+08:00" />
 <meta itemprop="name" content="Windows Subsystem for Linux 下 sac 的安装">
 <meta itemprop="description" content="WSL 是什么？ WSL 是 Windows Subsystem for Linux 的简称，是为在 Windows 10 上能够原生运行 Linux 二进制可执行文件而制作的兼容层。 它是由微软与 Canonical 公司合作开发，目标是使纯正的 Ubuntu 14.0">
-
-
 <meta itemprop="datePublished" content="2018-12-04T00:16:00&#43;08:00" />
 <meta itemprop="dateModified" content="2018-12-04T00:16:00&#43;08:00" />
 <meta itemprop="wordCount" content="1576">
 
 
 
-<meta itemprop="keywords" content="sac," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="sac," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Windows Subsystem for Linux 下 sac 的安装"/>
 <meta name="twitter:description" content="WSL 是什么？ WSL 是 Windows Subsystem for Linux 的简称，是为在 Windows 10 上能够原生运行 Linux 二进制可执行文件而制作的兼容层。 它是由微软与 Canonical 公司合作开发，目标是使纯正的 Ubuntu 14.0"/>
 
@@ -159,99 +155,55 @@
   <h2 class="post-toc-title">文章目录</h2>
   
   <div class="post-toc-content">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#wsl-是什么">WSL 是什么？</a></li>
-<li><a href="#wsl-对我们有什么用">WSL 对我们有什么用？</a></li>
-<li><a href="#安装-wsl">安装 WSL</a></li>
-<li><a href="#安装一些重要的依赖和安装-x11">安装一些重要的依赖和安装 X11</a></li>
-<li><a href="#安装-gedit">安装 gedit</a></li>
-<li><a href="#理解文件系统">理解文件系统</a></li>
-<li><a href="#安装sac">安装sac</a></li>
-</ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
 
     
     <div class="post-content">
-      
-
-<h1 id="wsl-是什么">WSL 是什么？</h1>
-
+      <h1 id="wsl-是什么">WSL 是什么？</h1>
 <p>WSL 是 Windows Subsystem for Linux 的简称，是为在 Windows 10 上能够原生运行 Linux 二进制可执行文件而制作的兼容层。
 它是由微软与 Canonical 公司合作开发，目标是使纯正的 Ubuntu 14.04/18.04，
 OpenSUSE, Kali Linux 和Debian 映像能下载和解压到用户的本地计算机，并且映像内的工具和实用工具能在此子系统上原生运行。</p>
-
 <h1 id="wsl-对我们有什么用">WSL 对我们有什么用？</h1>
-
 <p>不是所有的计算机支持虚拟机。学生安装虚拟机状况不断，难以保证都能解决。
 然而，事实上学生自己的电脑多数是 Windows 10 系统。
 只要是 Windows 10 系统，就可以用 WSL。另外，WSL 在和 Windows 系统之间分享文件非常容易，适合学生目前的需求。</p>
-
 <h1 id="安装-wsl">安装 WSL</h1>
-
 <p>确定 Windows 的内部版本号是 Windows build 16215 或以上，如果不满足，请升级。
 在左下角的搜索里搜索 powershell，右键，点击以管理员权限打开，执行以下命令:</p>
-
-<p><code>
-Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux
-</code></p>
-
+<p><code>Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux</code></p>
 <p>然后，重启电脑。</p>
-
 <p>访问 <a href="https://www.microsoft.com/zh-cn/p/ubuntu-1804-lts/9n9tngvndl3q?activetab=pivot:overviewtab">Windows 软件商店</a>
 下载 Ubuntu 18.04。
 点击后，下载会陆续开始，等待下载完毕。下载安装过程完全自动。
 装好以后，在开始菜单中可以看到 Ubuntu 18.04，点击即可启动。接着你可以看到一个命令行窗口：</p>
-
-<p><img src="/media/2018120401.png" alt="pic" /></p>
-
+<p><img src="/media/2018120401.png" alt="pic"></p>
 <p>这就是 Ubuntu 的Shell。英语看不懂，请查字典。输入一个自己的用户名和密码。
 这个用户名和密码只管 WSL。输入密码时，不会显示出来，类 UNIX 系统都不显示，怕你背后有人。</p>
-
 <p>下面系统更新，依次执行下面两个命令：</p>
-
-<pre><code class="language-bash">sudo sed -i 's/archive.ubuntu.com/mirrors.ustc.edu.cn/g' /etc/apt/sources.list
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo sed -i <span style="color:#e6db74">&#39;s/archive.ubuntu.com/mirrors.ustc.edu.cn/g&#39;</span> /etc/apt/sources.list
 sudo apt update
 sudo apt upgrade
-</code></pre>
-
-<p>上面第一个命令是把更新的下载站点更改为 mirrors.ustc.edu.cn。
+</code></pre></div><p>上面第一个命令是把更新的下载站点更改为 mirrors.ustc.edu.cn。
 第二个命令是更新全系统（只管 WSL）</p>
-
 <h1 id="安装一些重要的依赖和安装-x11">安装一些重要的依赖和安装 X11</h1>
-
-<pre><code class="language-bash">sudo apt install libc6 libsm6 libice6 libxpm4 libx11-6
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install libc6 libsm6 libice6 libxpm4 libx11-6
 sudo apt install zlib1g libncurses5
 sudo apt install x11-apps fontconfig dbus-x11 xfonts-wqy fonts-wqy-zenhei fonts-wqy-microhei
-</code></pre>
-
-<p>把 X11 的转发地址输入到环境变量：</p>
-
-<pre><code class="language-bash">echo &quot;export DISPLAY=127.0.0.1:0&quot; &gt;&gt; ~/.bashrc
-</code></pre>
-
-<p>下载 x11 软件<a href="https://nchc.dl.sourceforge.net/project/vcxsrv/vcxsrv/1.20.1.4/vcxsrv-64.1.20.1.4.installer.exe">vcxsrv</a>
+</code></pre></div><p>把 X11 的转发地址输入到环境变量：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">echo <span style="color:#e6db74">&#34;export DISPLAY=127.0.0.1:0&#34;</span> &gt;&gt; ~/.bashrc
+</code></pre></div><p>下载 x11 软件<a href="https://nchc.dl.sourceforge.net/project/vcxsrv/vcxsrv/1.20.1.4/vcxsrv-64.1.20.1.4.installer.exe">vcxsrv</a>
 下载后，在 Windows 安装。
 然后在 Windows 的开始菜单可以找到这个 x11 程序，启动它，选择 Multiple windows 模式，其他用默认选项，最后点击完成。
 简单的说，只要涉及图形界面界面，你都需要 X11 作为基础。
 X11 是 80 年代，Unix 为解决图形显示留下的解决方案。</p>
-
 <h1 id="安装-gedit">安装 gedit</h1>
-
 <p>执行以下命令：</p>
-
-<pre><code class="language-bash">sudo apt install gedit
-</code></pre>
-
-<p>启动 gedit，检查 gedit 是否能正确启动：</p>
-
-<pre><code class="language-bash">gedit
-</code></pre>
-
-<h1 id="理解文件系统">理解文件系统</h1>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install gedit
+</code></pre></div><p>启动 gedit，检查 gedit 是否能正确启动：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">gedit
+</code></pre></div><h1 id="理解文件系统">理解文件系统</h1>
 <p>首先你需要对 Linux 的文件系统和 Windows 的差异有所了解，你才能知道使用 Linux 的正确习惯。
 先说 Windows 的特点，Windows 上任何一个文件的位置都包含了硬盘的盘符，
 也就是 Windows 上面所有文件的路径就是指明它在硬盘的哪个位置。
@@ -271,16 +223,12 @@ emmm，这里有些抽象。
 你可以看看，WSL 里，路径<code>/mnt</code> 下面是什么。
 没错，是你的 Windows 上的一切。这里，就是把磁盘这个文件系统的根路径挂载到了 Linux 文件系统的 <code>/mnt</code> 下面。
 或者说把磁盘的根路径这个点和 <code>/mnt</code> 连接起来。</p>
-
 <p>另外，WSL 和用 Virtualbox 安装的 Linux 虚拟机有本质的区别。
 WSL 是 Windows 操作系统的一个部分，然后 Ubuntu 18.04 是基于这个部分为 Windows 10 安装的一个 app。
 Virtualbox 是一个应用软件，它构建了一个虚拟的独立的电脑，让 Ubuntu 以为自己是装在一个电脑里的。
 你可以认为 WSL 是让 Ubuntu 直接装在了 Windows 上，WSL 就是连接的部分。</p>
-
 <p>把文件放在 Windows 的各个盘的根目录下面，Linux 的读取就很方便。</p>
-
 <h1 id="安装sac">安装sac</h1>
-
 <p>按照普通 Linux 一样的方式安装 sac。</p>
 
     </div>

@@ -25,7 +25,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.73.0" />
 
 
 <link rel="canonical" href="https://seismology.xyz/post/bbdata/" />
@@ -52,21 +52,17 @@
 <meta property="og:description" content="经过快一个月的努力，我把我们 cdut 宽频/甚宽频台站的数据进行了整理，解决了数据截取和仪器响应两个问题。 期望在这里，通过这篇博文，把我的做法推广给" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://seismology.xyz/post/bbdata/" />
-<meta property="article:published_time" content="2018-12-22T16:28:00&#43;08:00"/>
-<meta property="article:modified_time" content="2018-12-22T16:28:00&#43;08:00"/>
-
+<meta property="article:published_time" content="2018-12-22T16:28:00+08:00" />
+<meta property="article:modified_time" content="2018-12-22T16:28:00+08:00" />
 <meta itemprop="name" content="cdut 宽频/甚宽频数据整理">
 <meta itemprop="description" content="经过快一个月的努力，我把我们 cdut 宽频/甚宽频台站的数据进行了整理，解决了数据截取和仪器响应两个问题。 期望在这里，通过这篇博文，把我的做法推广给">
-
-
 <meta itemprop="datePublished" content="2018-12-22T16:28:00&#43;08:00" />
 <meta itemprop="dateModified" content="2018-12-22T16:28:00&#43;08:00" />
 <meta itemprop="wordCount" content="764">
 
 
 
-<meta itemprop="keywords" content="数据管理," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="数据管理," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="cdut 宽频/甚宽频数据整理"/>
 <meta name="twitter:description" content="经过快一个月的努力，我把我们 cdut 宽频/甚宽频台站的数据进行了整理，解决了数据截取和仪器响应两个问题。 期望在这里，通过这篇博文，把我的做法推广给"/>
 
@@ -159,88 +155,54 @@
   <h2 class="post-toc-title">文章目录</h2>
   
   <div class="post-toc-content">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#建立索引文件">建立索引文件</a></li>
-<li><a href="#数据截取">数据截取</a></li>
-<li><a href="#仪器响应">仪器响应</a></li>
-<li><a href="#脚本的获取">脚本的获取</a></li>
-</ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
 
     
     <div class="post-content">
-      
-
-<p>经过快一个月的努力，我把我们 cdut 宽频/甚宽频台站的数据进行了整理，解决了数据截取和仪器响应两个问题。
+      <p>经过快一个月的努力，我把我们 cdut 宽频/甚宽频台站的数据进行了整理，解决了数据截取和仪器响应两个问题。
 期望在这里，通过这篇博文，把我的做法推广给组内同学。</p>
-
 <p>如何截取数据才是正确的方式呢？和 IRIS 一样就是正确的。
 <code>BREQ_FAST</code> 是 IRIS 的发邮件申请数据的工具。
 在这里，我写的脚本就是读取 <code>BREQ_FAST</code> 文件来截取数据，使数据的截取形式和 IRIS 的 <code>BREQ_FAST</code> 数据申请的结果一致。
 这样，今后无论哪种地震学方法，数据处理的脚本都可以轻易地写为既可以处理 IRIS 下载的数据，也可以处理我们自己的数据。</p>
-
 <h1 id="建立索引文件">建立索引文件</h1>
-
 <p>我是将自己的数据放在路径 <code>/data</code> 下面。
 我们宽频/甚宽频台站的数据是存放在路径 <code>/data/2017LiangCT_WuJ_LushanGAP</code> 下面的。
 其他台网的数据，比如短周期数据也是放在 <code>/data</code> 下面。
 要建立索引文件，可以使用脚本 <code>getstation.pl</code> 来建立索引文件，索引文件会放在 <code>2017LiangCT_WuJ_LushanGAP</code> 的上一级。
 索引文件是一个普通的文本文件：<code>index.txt</code>。形式如下：</p>
-
-<pre><code class="language-text">BBSX /data/2017LiangCT_WuJ_LushanGAP/BBSX/2016327/2016.327.09.BBSX.00.BHE.SAC 1479806682 1479808857.99
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">BBSX /data/2017LiangCT_WuJ_LushanGAP/BBSX/2016327/2016.327.09.BBSX.00.BHE.SAC 1479806682 1479808857.99
 BBSX /data/2017LiangCT_WuJ_LushanGAP/BBSX/2016327/2016.327.09.BBSX.00.BHN.SAC 1479806682 1479808857.99
-</code></pre>
-
-<p>第一列是台站名称，第二列是 SAC 文件的包含绝对路径的名称。
+</code></pre></div><p>第一列是台站名称，第二列是 SAC 文件的包含绝对路径的名称。
 后面两列数字是文件第一个和最后一个数据点的时刻，即相对于计算机元年的秒数。</p>
-
 <p>同时， <code>getstation.pl</code> 还会生成一个 <code>station_builder.txt</code> 文件。
 这个文件是针对人的表述文件，方便人的阅读，形式如下：</p>
-
-<pre><code class="language-text">CD|BBSX|30.3282|103.046|CDUT|2016-11-22T09:24:42|2018-01-27T10:08:01|
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">CD|BBSX|30.3282|103.046|CDUT|2016-11-22T09:24:42|2018-01-27T10:08:01|
 CD|BCPC|30.9483|103.316|CDUT|2016-11-25T03:00:00|2018-01-28T04:00:18|
 CD|BFSC|30.5991|103.187|CDUT|2016-11-27T04:51:16|2018-01-30T07:41:08|
-</code></pre>
-
-<p>这个文件的形式和 IRIS 的 station builder 生成的 TEXT 格式是一致的。
+</code></pre></div><p>这个文件的形式和 IRIS 的 station builder 生成的 TEXT 格式是一致的。
 CD 为台网名。CDUT 是对台站的描述，在处理数据时其实不发生作用。</p>
-
 <h1 id="数据截取">数据截取</h1>
-
 <p>这里，数据截取需要你自己准备好一个 <code>BREQ_FAST</code> 文件，这方面可以在 seisman 上找到资料。</p>
-
 <p>首先把刚才的索引文件所在路径添加环境变量：</p>
-
-<pre><code class="language-text"># DATABASE
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text"># DATABASE
 export DATA_BASE=/data
-</code></pre>
-
-<p>然后，使用脚本 <code>breq2data.pl</code> 即可：</p>
-
-<pre><code class="language-bash">perl breq2data.pl 20180123.breq
-</code></pre>
-
-<p>届时，脚本提供的数据形式就和  <code>BREQ_FAST</code> 解压 seed 文件出来的相同。</p>
-
+</code></pre></div><p>然后，使用脚本 <code>breq2data.pl</code> 即可：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">perl breq2data.pl 20180123.breq
+</code></pre></div><p>届时，脚本提供的数据形式就和  <code>BREQ_FAST</code> 解压 seed 文件出来的相同。</p>
 <h1 id="仪器响应">仪器响应</h1>
-
 <p>仪器响应的问题，已经整理为一个 word 文档来说明问题和 PZ 文件来去仪器响应（组内私下分享）。
 使用方法（如果是用我提供的脚本截取数据，则可以正确运行，直接使用会出错）：</p>
-
-<pre><code class="language-bash">SAC&gt; r *SAC
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">SAC&gt; r *SAC
 SAC&gt; rglitches;
 SAC&gt; rmean;rtr;taper
-SAC&gt; trans from polezero subtype PZ.ALL to none freq 0.1 0.2 5 10
-SAC&gt; mul 1.0e9 # 振幅转为位移，单位转为 nm
+SAC&gt; trans from polezero subtype PZ.ALL to none freq 0.1 0.2 <span style="color:#ae81ff">5</span> <span style="color:#ae81ff">10</span>
+SAC&gt; mul 1.0e9 <span style="color:#75715e"># 振幅转为位移，单位转为 nm</span>
 SAC&gt; w over
 SAC&gt; q
-</code></pre>
-
-<h1 id="脚本的获取">脚本的获取</h1>
-
+</code></pre></div><h1 id="脚本的获取">脚本的获取</h1>
 <p>脚本的获取请组内私下联系。</p>
 
     </div>

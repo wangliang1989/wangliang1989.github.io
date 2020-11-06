@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on Seismology - A super blog for seismology</title>
@@ -17,7 +17,7 @@
       <pubDate>Wed, 22 Jan 2020 16:58:00 +0800</pubDate>
       
       <guid>https://seismology.xyz/post/apply_for_authorization_of_restricted_data/</guid>
-      <description>数据：千年大计。 IRIS DMC 上并不是所有数据都开放。有一些台站需要授权才能下载。申请使用权的地址是 http://ds.iris.edu/ds/nodes/dmc/forms/restricted-data-registration/ 这里面要填写一些信息。这里的信息都不能乱填，是人</description>
+      <description>数据——千年大计。 IRIS DMC 上并不是所有数据都开放。有一些台站需要授权才能下载。申请使用权的地址是 http://ds.iris.edu/ds/nodes/dmc/forms/restricted-data-registration/ 这里面要填写一些信息。这里的信息都不能乱填，是</description>
     </item>
     
     <item>
@@ -314,7 +314,7 @@
       <pubDate>Fri, 04 Dec 2015 12:13:19 +0800</pubDate>
       
       <guid>https://seismology.xyz/post/git-commands/</guid>
-      <description>和提交有关 添加或修改文件的修改提交到暂存区(记住：git跟踪的是修改！) git add &amp;lt;fileName&amp;gt; 删除文件的修改提交到暂存区 git rm &amp;lt;fileName&amp;gt; 提交到仓库 git commit -m&amp;quot;</description>
+      <description>和提交有关 添加或修改文件的修改提交到暂存区(记住：git跟踪的是修改！) git add &amp;lt;fileName&amp;gt; 删除文件的修改提交到暂存区 git rm &amp;lt;fileName&amp;gt; 提交到仓库 git commit -m&amp;#34;&amp;</description>
     </item>
     
     <item>

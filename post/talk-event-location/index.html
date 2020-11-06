@@ -25,7 +25,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.73.0" />
 
 
 <link rel="canonical" href="https://seismology.xyz/post/talk-event-location/" />
@@ -52,21 +52,17 @@
 <meta property="og:description" content="本 talk 讨论利用走时对地震绝对定位的一些认识。 问题一：为什么说用走时来绝对定位一个地震至少需要四个台站？ 时空是四维的，所以需要四个方程才能解出地" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://seismology.xyz/post/talk-event-location/" />
-<meta property="article:published_time" content="2017-04-28T21:00:58&#43;08:00"/>
-<meta property="article:modified_time" content="2017-04-28T21:00:58&#43;08:00"/>
-
+<meta property="article:published_time" content="2017-04-28T21:00:58+08:00" />
+<meta property="article:modified_time" content="2017-04-28T21:00:58+08:00" />
 <meta itemprop="name" content="地震走时定位talk">
 <meta itemprop="description" content="本 talk 讨论利用走时对地震绝对定位的一些认识。 问题一：为什么说用走时来绝对定位一个地震至少需要四个台站？ 时空是四维的，所以需要四个方程才能解出地">
-
-
 <meta itemprop="datePublished" content="2017-04-28T21:00:58&#43;08:00" />
 <meta itemprop="dateModified" content="2017-04-28T21:00:58&#43;08:00" />
 <meta itemprop="wordCount" content="723">
 
 
 
-<meta itemprop="keywords" content="事件定位," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="事件定位," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="地震走时定位talk"/>
 <meta name="twitter:description" content="本 talk 讨论利用走时对地震绝对定位的一些认识。 问题一：为什么说用走时来绝对定位一个地震至少需要四个台站？ 时空是四维的，所以需要四个方程才能解出地"/>
 
@@ -159,41 +155,22 @@
   <h2 class="post-toc-title">文章目录</h2>
   
   <div class="post-toc-content">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#问题一-为什么说用走时来绝对定位一个地震至少需要四个台站">问题一：为什么说用走时来绝对定位一个地震至少需要四个台站？</a></li>
-<li><a href="#问题二-为什么地震深度的定位很难">问题二：为什么地震深度的定位很难？</a></li>
-<li><a href="#问题三-那如何才能对深度的定位比较准">问题三：那如何才能对深度的定位比较准？</a></li>
-<li><a href="#问题四-无误差的模型-无误差的四个到时是不是可以得到无误差的定位">问题四：无误差的模型+无误差的四个到时是不是可以得到无误差的定位？</a></li>
-</ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
 
     
     <div class="post-content">
-      
-
-<p>本 talk 讨论利用走时对地震绝对定位的一些认识。</p>
-
-<h1 id="问题一-为什么说用走时来绝对定位一个地震至少需要四个台站">问题一：为什么说用走时来绝对定位一个地震至少需要四个台站？</h1>
-
+      <p>本 talk 讨论利用走时对地震绝对定位的一些认识。</p>
+<h1 id="问题一为什么说用走时来绝对定位一个地震至少需要四个台站">问题一：为什么说用走时来绝对定位一个地震至少需要四个台站？</h1>
 <p>时空是四维的，所以需要四个方程才能解出地震在四维时空里的四个坐标分量。需要四个台站其实是指需要四个方程，如果一个台站的记录有多个震相，则不需要四个台站。</p>
-
-<h1 id="问题二-为什么地震深度的定位很难">问题二：为什么地震深度的定位很难？</h1>
-
+<h1 id="问题二为什么地震深度的定位很难">问题二：为什么地震深度的定位很难？</h1>
 <p>情形一：假定某个地震的深度是50km，有四个台站，分别位于地震的正东、正西、正南、正北，震中距分别是40、50、60、70度，模型百分百精确，如果定出来的位置与地震位置相同，显然走时残差为 0；如果定出来的位置在真实地震位置的东边 10 km 处，走时残差：东方台为正残差，西方台为负残差。南北方向也是负残差，但残差的绝对值比东西台小很多，可以认为是0。也就是说，根据各台站的残差情况就可以大概知道地震应该往哪偏才能把总得残差变小。然而，如果是深度定错了，这四个台站的残差会是同正同负，这样便会与时间带来的影响一样。就是说，深度的偏差带来的残差和时间带来的残差一样：在各个台站的极性相同。</p>
-
 <p>情形二：如果上面说的四个台站都分布在震中的东边，定出来的位置在真实位置东边的 10 km 处。则各个台站的残差均是正残差，假设分别是 +1、+5、+10、+20，则通过修改发震时刻使得其变成 0、4、9、19。</p>
-
 <p>本质上来说，其实是因为发震时刻对于所有震相到时的影响是单向的，要么正要么负。所以其他一切同正同负的影响，都可以被归结到发震时刻中去。</p>
-
-<h1 id="问题三-那如何才能对深度的定位比较准">问题三：那如何才能对深度的定位比较准？</h1>
-
+<h1 id="问题三那如何才能对深度的定位比较准">问题三：那如何才能对深度的定位比较准？</h1>
 <p>射线的离源角有大于 90 度的，也有小于 90 度的（离源角范围定义为 0 到 180）。这样，深度的偏差给各个台站带来的残差就是有正有负了。</p>
-
-<h1 id="问题四-无误差的模型-无误差的四个到时是不是可以得到无误差的定位">问题四：无误差的模型+无误差的四个到时是不是可以得到无误差的定位？</h1>
-
+<h1 id="问题四无误差的模型无误差的四个到时是不是可以得到无误差的定位">问题四：无误差的模型+无误差的四个到时是不是可以得到无误差的定位？</h1>
 <p>不是，原因见问题 2 的情形二。</p>
 
     </div>

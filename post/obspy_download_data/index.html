@@ -25,7 +25,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.73.0" />
 
 
 <link rel="canonical" href="https://seismology.xyz/post/obspy_download_data/" />
@@ -52,21 +52,17 @@
 <meta property="og:description" content="Obspy 可以用于下载波形数据，主要优势在于自动支持「所有」数据中心。 准备安装环境 首先，需要安装 anaconda，可以参考 https://blog.seisman.info/anaconda/ 开始安装 conda config --add channels conda-forge conda create -n" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://seismology.xyz/post/obspy_download_data/" />
-<meta property="article:published_time" content="2019-04-09T12:44:00&#43;08:00"/>
-<meta property="article:modified_time" content="2019-04-09T12:44:00&#43;08:00"/>
-
+<meta property="article:published_time" content="2019-04-09T12:44:00+08:00" />
+<meta property="article:modified_time" content="2019-04-09T12:44:00+08:00" />
 <meta itemprop="name" content="Obspy 下载数据">
 <meta itemprop="description" content="Obspy 可以用于下载波形数据，主要优势在于自动支持「所有」数据中心。 准备安装环境 首先，需要安装 anaconda，可以参考 https://blog.seisman.info/anaconda/ 开始安装 conda config --add channels conda-forge conda create -n">
-
-
 <meta itemprop="datePublished" content="2019-04-09T12:44:00&#43;08:00" />
 <meta itemprop="dateModified" content="2019-04-09T12:44:00&#43;08:00" />
 <meta itemprop="wordCount" content="114">
 
 
 
-<meta itemprop="keywords" content="波形数据," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="波形数据," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Obspy 下载数据"/>
 <meta name="twitter:description" content="Obspy 可以用于下载波形数据，主要优势在于自动支持「所有」数据中心。 准备安装环境 首先，需要安装 anaconda，可以参考 https://blog.seisman.info/anaconda/ 开始安装 conda config --add channels conda-forge conda create -n"/>
 
@@ -159,42 +155,24 @@
   <h2 class="post-toc-title">文章目录</h2>
   
   <div class="post-toc-content">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#准备安装环境">准备安装环境</a></li>
-<li><a href="#开始安装">开始安装</a></li>
-<li><a href="#下载数据">下载数据</a></li>
-</ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
 
     
     <div class="post-content">
-      
-
-<p>Obspy 可以用于下载波形数据，主要优势在于自动支持「所有」数据中心。</p>
-
+      <p>Obspy 可以用于下载波形数据，主要优势在于自动支持「所有」数据中心。</p>
 <h1 id="准备安装环境">准备安装环境</h1>
-
 <p>首先，需要安装 anaconda，可以参考</p>
-
 <p><a href="https://blog.seisman.info/anaconda/">https://blog.seisman.info/anaconda/</a></p>
-
 <h1 id="开始安装">开始安装</h1>
-
-<pre><code class="language-bash">conda config --add channels conda-forge
-conda create -n obspy python=3.7   # 为 obspy 配置专门的 python 环境
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">conda config --add channels conda-forge
+conda create -n obspy python<span style="color:#f92672">=</span>3.7   <span style="color:#75715e"># 为 obspy 配置专门的 python 环境</span>
 conda activate obspy
 conda install obspy
-</code></pre>
-
-<p>正确情况下，这就安装好了。</p>
-
+</code></pre></div><p>正确情况下，这就安装好了。</p>
 <h1 id="下载数据">下载数据</h1>
-
 <p>参照官方例子：</p>
-
 <p><a href="https://docs.obspy.org/packages/autogen/obspy.clients.fdsn.mass_downloader.html">https://docs.obspy.org/packages/autogen/obspy.clients.fdsn.mass_downloader.html</a></p>
 
     </div>

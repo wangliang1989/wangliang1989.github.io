@@ -25,7 +25,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.73.0" />
 
 
 <link rel="canonical" href="https://seismology.xyz/post/gcmt-catlog/" />
@@ -52,21 +52,17 @@
 <meta property="og:description" content="GCMT提供目录的打包下载。下载地址是 http://www.globalcmt.org/CMTfiles.html 下载下来的ndk文件其实是一个文本文件。每一个地震有5行的内容： PDE 2005/01/01 01:20:05.4 13.78 -88.78 193.1 5.0 0.0 EL SALVADOR C200501010120A B: 4 4 40 S: 27 33" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://seismology.xyz/post/gcmt-catlog/" />
-<meta property="article:published_time" content="2018-08-10T10:57:00&#43;08:00"/>
-<meta property="article:modified_time" content="2018-08-10T10:57:00&#43;08:00"/>
-
+<meta property="article:published_time" content="2018-08-10T10:57:00+08:00" />
+<meta property="article:modified_time" content="2018-08-10T10:57:00+08:00" />
 <meta itemprop="name" content="GCMT 地震目录格式">
 <meta itemprop="description" content="GCMT提供目录的打包下载。下载地址是 http://www.globalcmt.org/CMTfiles.html 下载下来的ndk文件其实是一个文本文件。每一个地震有5行的内容： PDE 2005/01/01 01:20:05.4 13.78 -88.78 193.1 5.0 0.0 EL SALVADOR C200501010120A B: 4 4 40 S: 27 33">
-
-
 <meta itemprop="datePublished" content="2018-08-10T10:57:00&#43;08:00" />
 <meta itemprop="dateModified" content="2018-08-10T10:57:00&#43;08:00" />
 <meta itemprop="wordCount" content="1218">
 
 
 
-<meta itemprop="keywords" content="gcmt," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="gcmt," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="GCMT 地震目录格式"/>
 <meta name="twitter:description" content="GCMT提供目录的打包下载。下载地址是 http://www.globalcmt.org/CMTfiles.html 下载下来的ndk文件其实是一个文本文件。每一个地震有5行的内容： PDE 2005/01/01 01:20:05.4 13.78 -88.78 193.1 5.0 0.0 EL SALVADOR C200501010120A B: 4 4 40 S: 27 33"/>
 
@@ -159,99 +155,59 @@
   <h2 class="post-toc-title">文章目录</h2>
   
   <div class="post-toc-content">
-    
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
 
     
     <div class="post-content">
       <p><a href="http://www.globalcmt.org/">GCMT</a>提供目录的打包下载。下载地址是 <a href="http://www.globalcmt.org/CMTfiles.html">http://www.globalcmt.org/CMTfiles.html</a></p>
-
 <p>下载下来的ndk文件其实是一个文本文件。每一个地震有5行的内容：</p>
-
-<pre><code class="language-text">PDE  2005/01/01 01:20:05.4  13.78  -88.78 193.1 5.0 0.0 EL SALVADOR             
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">PDE  2005/01/01 01:20:05.4  13.78  -88.78 193.1 5.0 0.0 EL SALVADOR             
 C200501010120A   B:  4    4  40 S: 27   33  50 M:  0    0   0 CMT: 1 TRIHD:  0.6
 CENTROID:     -0.3 0.9  13.76 0.06  -89.08 0.09 162.8 12.5 FREE S-20050322125201
 23  0.838 0.201 -0.005 0.231 -0.833 0.270  1.050 0.121 -0.369 0.161  0.044 0.240
 V10   1.581 56  12  -0.537 23 140  -1.044 24 241   1.312   9 29  142 133 72   66
-</code></pre>
-
-<p>首先要说明的是，本质上ndk文件是用字符数来决定表达的含义，而不是用空格分割来决定的。
+</code></pre></div><p>首先要说明的是，本质上ndk文件是用字符数来决定表达的含义，而不是用空格分割来决定的。
 不过人还是习惯用空格分隔来阅读。</p>
-
 <p>第一行：</p>
-
-<pre><code class="language-text">PDE      2005/01/01 01:20:05.4  13.78  -88.78 193.1 5.0    0.0    EL SALVADOR
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">PDE      2005/01/01 01:20:05.4  13.78  -88.78 193.1 5.0    0.0    EL SALVADOR
 参考目录  发震日期     发震时刻     纬度    经度    深度   mb震级 MS震级  地理位置
-</code></pre>
-
-<p>[1-4] 第 1 个字符到第 4 个字符表示参考目录名称，(比如 PDE 表示 USGS，ISC 表示 ISC，SWE表示 surface-wave location，[Ekstrom, BSSA, 2006])</p>
-
+</code></pre></div><p>[1-4] 第 1 个字符到第 4 个字符表示参考目录名称，(比如 PDE 表示 USGS，ISC 表示 ISC，SWE表示 surface-wave location，[Ekstrom, BSSA, 2006])</p>
 <p>[6-15] 发震日期</p>
-
 <p>[17-26] 发震时刻</p>
-
 <p>[28-33] 纬度</p>
-
 <p>[35-41] 经度</p>
-
 <p>[43-47] 深度</p>
-
 <p>[49-55] 震级，一般是 mb 震级和 MS 震级</p>
-
 <p>[57-80] 地理位置(24 个字符)</p>
-
 <p>第二行：</p>
-
-<pre><code class="language-text">C200501010120A   B:  4    4  40 S: 27   33  50 M:  0    0   0 CMT: 1 TRIHD:  0.6
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">C200501010120A   B:  4    4  40 S: 27   33  50 M:  0    0   0 CMT: 1 TRIHD:  0.6
 CMT 事件编号       反演所用的数据                                 反演类型 震源速度函数
-</code></pre>
-
-<p>[1-16] CMT 事件编号。老格式的编号是 8 位，现在是 14 位。老格式为 XMMDDYYZ，其中 MMDDYY 是日期，Z 是用于区分同一天的事件的字符。X 是指反演用数据的类型。
+</code></pre></div><p>[1-16] CMT 事件编号。老格式的编号是 8 位，现在是 14 位。老格式为 XMMDDYYZ，其中 MMDDYY 是日期，Z 是用于区分同一天的事件的字符。X 是指反演用数据的类型。
 新格式：XYYYYMMDDhhmmZ，第一个字符 X 只可能是：B - 仅体波反演，S - 仅面波反演，M - 仅地幔波（mantle waves）反演，C - 组合。</p>
-
 <p>[18-61] 反演用的数据。三个数据类型可能是长周期体波反演（B），中等周期的面波反演（S），长周期的地幔波（mantle waves）反演。
 对于每一个数据类型，会给出三个值：台站数量、分量数量和使用的最短周期。</p>
-
 <p>[63-68] 反演类型。0：矩张量，1：带零迹的矩张量，2：双力偶。通常我们说矩张量就是包含了零迹的，我猜测也许这里说的矩张量是 DC+CLVD</p>
-
 <p>[70-80] 震源速度函数（moment-rate function）的类型和长度。TRIHD 是三角形的，BOXHD 是矩形的。所给的值是真实的一半。
 长度正比于标量矩的立方根。如果标量矩是 10^24，长度是 1.05 秒。如果标量矩是 10^27，长度是 10.5 秒。</p>
-
 <p>第三行：</p>
-
-<pre><code class="language-text">CENTROID:     -0.3 0.9  13.76 0.06  -89.08 0.09 162.8 12.5 FREE    S-20050322125201
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">CENTROID:     -0.3 0.9  13.76 0.06  -89.08 0.09 162.8 12.5 FREE    S-20050322125201
 反演中的质心参数                                              深度类型 时间戳
-</code></pre>
-
-<p>[1-58]  反演中的质心参数。和地震参考目录相比的参数。依次为时间、纬度、经度、深度和他们的估计标准差。如果标准差是 0，则说明直接用的参考目录。</p>
-
+</code></pre></div><p>[1-58]  反演中的质心参数。和地震参考目录相比的参数。依次为时间、纬度、经度、深度和他们的估计标准差。如果标准差是 0，则说明直接用的参考目录。</p>
 <p>[60-63] 深度类型。FREE 表示为反演的结果。FIX 表示经过过修正。BDY 表示经过了宽频带 P 波的修正。</p>
-
 <p>[65-80] 时间戳. 16 个字符。Q- 表示事件后几小时内计算的。S- 表示几小时之后计算的。</p>
-
 <p>第四行：</p>
-
-<pre><code class="language-text">23          0.838 0.201 -0.005 0.231 -0.833 0.270  1.050 0.121 -0.369 0.161  0.044 0.240
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">23          0.838 0.201 -0.005 0.231 -0.833 0.270  1.050 0.121 -0.369 0.161  0.044 0.240
 标量矩的系数  USE 坐标系下的矩张量元素和他们的估计标准差
-</code></pre>
-
-<p>[1-2] 标量矩的系数。如果是 24，矩张量的元素如果单位是 dyne-cm, 那么就需要乘以 10^24。</p>
-
+</code></pre></div><p>[1-2] 标量矩的系数。如果是 24，矩张量的元素如果单位是 dyne-cm, 那么就需要乘以 10^24。</p>
 <p>[3-80]  矩张量的元素，USE 坐标系: Muu Mss Mee Mus Mue Mse</p>
-
 <p>第五行：</p>
-
-<pre><code class="language-text">V10   1.581 56  12  -0.537 23 140  -1.044 24 241   1.312   9 29  142 133 72   66
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">V10   1.581 56  12  -0.537 23 140  -1.044 24 241   1.312   9 29  142 133 72   66
 版本号 主轴坐标系的矩张量                              标量矩   断层面解
-</code></pre>
-
-<p>[1-3] 版本号。</p>
-
+</code></pre></div><p>[1-3] 版本号。</p>
 <p>[4-48]  主轴坐标系的矩张量：三个特征向量的特征值、俯角和方位角。特征值需要乘以标量矩系数（见第四行）。</p>
-
 <p>[50-56] 标量矩。还需要乘以标量矩系数（见第四行）。</p>
-
 <p>[58-80] Aki and Richards 描述的两个节面的 Strike、 dip 和 rake</p>
 
     </div>

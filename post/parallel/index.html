@@ -25,7 +25,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.73.0" />
 
 
 <link rel="canonical" href="https://seismology.xyz/post/parallel/" />
@@ -52,21 +52,17 @@
 <meta property="og:description" content="据 LUG 里比较专业的 Linuxer 介绍，多开几个终端，不能自动的分配核。 另外，不并行完成一个程序所用时间除以并行完成所用的时间之商与计算机核数相等是并行优化" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://seismology.xyz/post/parallel/" />
-<meta property="article:published_time" content="2016-01-13T12:13:19&#43;08:00"/>
-<meta property="article:modified_time" content="2016-01-13T12:13:19&#43;08:00"/>
-
+<meta property="article:published_time" content="2016-01-13T12:13:19+08:00" />
+<meta property="article:modified_time" content="2016-01-13T12:13:19+08:00" />
 <meta itemprop="name" content="简单并行方法汇总">
 <meta itemprop="description" content="据 LUG 里比较专业的 Linuxer 介绍，多开几个终端，不能自动的分配核。 另外，不并行完成一个程序所用时间除以并行完成所用的时间之商与计算机核数相等是并行优化">
-
-
 <meta itemprop="datePublished" content="2016-01-13T12:13:19&#43;08:00" />
 <meta itemprop="dateModified" content="2016-01-13T12:13:19&#43;08:00" />
 <meta itemprop="wordCount" content="470">
 
 
 
-<meta itemprop="keywords" content="并行," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="并行," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="简单并行方法汇总"/>
 <meta name="twitter:description" content="据 LUG 里比较专业的 Linuxer 介绍，多开几个终端，不能自动的分配核。 另外，不并行完成一个程序所用时间除以并行完成所用的时间之商与计算机核数相等是并行优化"/>
 
@@ -159,73 +155,41 @@
   <h2 class="post-toc-title">文章目录</h2>
   
   <div class="post-toc-content">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#xargs">xargs</a></li>
-<li><a href="#perl-模块">perl 模块</a></li>
-<li><a href="#gnu-parallel">GNU parallel</a></li>
-</ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
 
     
     <div class="post-content">
-      
-
-<p>据 LUG 里比较专业的 Linuxer 介绍，多开几个终端，不能自动的分配核。
+      <p>据 LUG 里比较专业的 Linuxer 介绍，多开几个终端，不能自动的分配核。
 另外，不并行完成一个程序所用时间除以并行完成所用的时间之商与计算机核数相等是并行优化的极限。</p>
-
 <h1 id="xargs">xargs</h1>
-
 <p>xargs 不需要自己安装，这么使用：</p>
-
-<pre><code class="language-bash">cat cmd | tr '\n' '\0' | xargs -P 8 -0 -n1  bash -c
-</code></pre>
-
-<p>把需要执行的命令写到 cmd 文件里，cmd 文件内的每一行命令会被分配一个核进行计算，8 的意思是最多同时运行 8 个进程。一定要确保 cmd 文件里每一行的命令是相互独立的，因为它们的计算顺序将不得而知。</p>
-
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cat cmd | tr <span style="color:#e6db74">&#39;\n&#39;</span> <span style="color:#e6db74">&#39;\0&#39;</span> | xargs -P <span style="color:#ae81ff">8</span> -0 -n1  bash -c
+</code></pre></div><p>把需要执行的命令写到 cmd 文件里，cmd 文件内的每一行命令会被分配一个核进行计算，8 的意思是最多同时运行 8 个进程。一定要确保 cmd 文件里每一行的命令是相互独立的，因为它们的计算顺序将不得而知。</p>
 <h1 id="perl-模块">perl 模块</h1>
-
 <p>调用模块：</p>
-
-<pre><code class="language-perl">use Parallel::ForkManager;
-</code></pre>
-
-<p>这样使用：</p>
-
-<pre><code class="language-perl">my $pm = Parallel::ForkManager-&gt;new(8);
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">use</span> Parallel::ForkManager;
+</code></pre></div><p>这样使用：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-perl" data-lang="perl"><span style="color:#66d9ef">my</span> $pm <span style="color:#f92672">=</span> Parallel::ForkManager<span style="color:#f92672">-&gt;</span><span style="color:#66d9ef">new</span>(<span style="color:#ae81ff">8</span>);
 grn_LOOP:
-foreach my $ cmd (@cmd) {
-    my $pid = $pm-&gt;start and next grn_LOOP;
-    system &quot;$cmd&quot;;
-    $pm-&gt;finish;
+<span style="color:#66d9ef">foreach</span> <span style="color:#66d9ef">my</span> $ cmd (@cmd) {
+    <span style="color:#66d9ef">my</span> $pid <span style="color:#f92672">=</span> $pm<span style="color:#f92672">-&gt;</span>start <span style="color:#f92672">and</span> <span style="color:#66d9ef">next</span> grn_LOOP;
+    system <span style="color:#e6db74">&#34;$cmd&#34;</span>;
+    $pm<span style="color:#f92672">-&gt;</span>finish;
 }
-$pm-&gt;wait_all_children;
-</code></pre>
-
-<p>每一个循环分配一个进程，最多分配 8 个。</p>
-
+$pm<span style="color:#f92672">-&gt;</span>wait_all_children;
+</code></pre></div><p>每一个循环分配一个进程，最多分配 8 个。</p>
 <h1 id="gnu-parallel">GNU parallel</h1>
-
 <p>执行这个命令安装：</p>
-
-<pre><code class="language-bash">(wget -O - pi.dk/3 || curl pi.dk/3/) | bash
-</code></pre>
-
-<p>这么使用：</p>
-
-<pre><code class="language-bash">parallel  --max-procs 8 echo {} ::: &quot;1 7&quot; &quot;8 14&quot; &quot;15 21&quot; &quot;22 28&quot;
-</code></pre>
-
-<p>这个命令会让 echo 并行执行。8 是指最多的计算机核数，&rdquo;1 7&rdquo; 这些是传给echo的参数。
-我试验的情况是，&rdquo;1 7&rdquo; 是作为一个参数传入的，而不是两个。
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash"><span style="color:#f92672">(</span>wget -O - pi.dk/3 <span style="color:#f92672">||</span> curl pi.dk/3/<span style="color:#f92672">)</span> | bash
+</code></pre></div><p>这么使用：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">parallel  --max-procs <span style="color:#ae81ff">8</span> echo <span style="color:#f92672">{}</span> ::: <span style="color:#e6db74">&#34;1 7&#34;</span> <span style="color:#e6db74">&#34;8 14&#34;</span> <span style="color:#e6db74">&#34;15 21&#34;</span> <span style="color:#e6db74">&#34;22 28&#34;</span>
+</code></pre></div><p>这个命令会让 echo 并行执行。8 是指最多的计算机核数，&ldquo;1 7&rdquo; 这些是传给echo的参数。
+我试验的情况是，&ldquo;1 7&rdquo; 是作为一个参数传入的，而不是两个。
 所以如果你用的是perl：</p>
-
-<pre><code class="language-bash">parallel  --max-procs 8 'perl nll.pl' {} ::: &quot;events 2 2&quot;
-</code></pre>
-
-<p>这里，perl会认为你传入的是一个参数，内容是 &ldquo;events空格2空格2&rdquo; ，而不是 3 个。
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">parallel  --max-procs <span style="color:#ae81ff">8</span> <span style="color:#e6db74">&#39;perl nll.pl&#39;</span> <span style="color:#f92672">{}</span> ::: <span style="color:#e6db74">&#34;events 2 2&#34;</span>
+</code></pre></div><p>这里，perl会认为你传入的是一个参数，内容是 &ldquo;events空格2空格2&rdquo; ，而不是 3 个。
 目前，除了改 perl 脚本我还不知道这如何处理。</p>
 
     </div>

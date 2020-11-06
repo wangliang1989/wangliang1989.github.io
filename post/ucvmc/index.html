@@ -25,7 +25,7 @@
 
 
 
-<meta name="generator" content="Hugo 0.54.0" />
+<meta name="generator" content="Hugo 0.73.0" />
 
 
 <link rel="canonical" href="https://seismology.xyz/post/ucvmc/" />
@@ -52,21 +52,17 @@
 <meta property="og:description" content="南加州地震中心统一社区模型提供的是美国加州的参考模型，下简称加州模型。 准备安装环境 加州模型的安装需要 python2 的环境，理论可以在 Linux 和 Mac 上安装，不过我" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://seismology.xyz/post/ucvmc/" />
-<meta property="article:published_time" content="2019-04-07T14:24:00&#43;08:00"/>
-<meta property="article:modified_time" content="2019-04-07T14:24:00&#43;08:00"/>
-
+<meta property="article:published_time" content="2019-04-07T14:24:00+08:00" />
+<meta property="article:modified_time" content="2019-04-07T14:24:00+08:00" />
 <meta itemprop="name" content="南加州地震中心统一社区模型">
 <meta itemprop="description" content="南加州地震中心统一社区模型提供的是美国加州的参考模型，下简称加州模型。 准备安装环境 加州模型的安装需要 python2 的环境，理论可以在 Linux 和 Mac 上安装，不过我">
-
-
 <meta itemprop="datePublished" content="2019-04-07T14:24:00&#43;08:00" />
 <meta itemprop="dateModified" content="2019-04-07T14:24:00&#43;08:00" />
 <meta itemprop="wordCount" content="461">
 
 
 
-<meta itemprop="keywords" content="参考模型," />
-<meta name="twitter:card" content="summary"/>
+<meta itemprop="keywords" content="参考模型," /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="南加州地震中心统一社区模型"/>
 <meta name="twitter:description" content="南加州地震中心统一社区模型提供的是美国加州的参考模型，下简称加州模型。 准备安装环境 加州模型的安装需要 python2 的环境，理论可以在 Linux 和 Mac 上安装，不过我"/>
 
@@ -159,85 +155,47 @@
   <h2 class="post-toc-title">文章目录</h2>
   
   <div class="post-toc-content">
-    <nav id="TableOfContents">
-<ul>
-<li><a href="#准备安装环境">准备安装环境</a></li>
-<li><a href="#下载源码">下载源码</a></li>
-<li><a href="#下载大型数据文件">下载大型数据文件</a></li>
-<li><a href="#安装">安装</a></li>
-</ul>
-</nav>
+    <nav id="TableOfContents"></nav>
   </div>
 </div>
 
     
     <div class="post-content">
-      
-
-<p>南加州地震中心统一社区模型提供的是美国加州的参考模型，下简称加州模型。</p>
-
+      <p>南加州地震中心统一社区模型提供的是美国加州的参考模型，下简称加州模型。</p>
 <h1 id="准备安装环境">准备安装环境</h1>
-
 <p>加州模型的安装需要 python2 的环境，理论可以在 Linux 和 Mac 上安装，不过我仅在 Linux 上成功。
 目前，多数新 python 程序已经是 python3，使用 anaconda 可以临时启用 python2 的环境。
 安装 anaconda 可以参考</p>
-
 <p><a href="https://blog.seisman.info/anaconda/">https://blog.seisman.info/anaconda/</a></p>
-
 <p>除了 python2，还需要安装 GNU C 和 Fortran，通常这本身已经安装了。</p>
-
 <h1 id="下载源码">下载源码</h1>
-
 <p>使用 git 下载源码：</p>
-
-<pre><code class="language-bash">git clone https://github.com/SCECCode/UCVMC.git
-</code></pre>
-
-<h1 id="下载大型数据文件">下载大型数据文件</h1>
-
-<pre><code class="language-bash">cd UCVMC/largefiles
-git checkout dev # 如果要使用开发版
-conda activate python2 # 激活 python2 环境
-./get_large_files.py # 下载大型数据文件
-</code></pre>
-
-<p>数据文件比较大，可能需要较长的时间。数据下载完毕后会显示：</p>
-
-<pre><code class="language-text">Completed all required downloads. This computer is now ready to build and install the UCVMC programs and scripts.
-</code></pre>
-
-<p>然后，需要检查数据下载是否成功</p>
-
-<pre><code class="language-bash">./check_largefiles_md5.py
-</code></pre>
-
-<p>如果输出如下，表示下载成功。这个数据检查是用的md5，该脚本在 Mac 上无法使用。</p>
-
-<pre><code class="language-text">Checked 10 UCVM large files with: 10 OK, and: 0 errors
-</code></pre>
-
-<h1 id="安装">安装</h1>
-
-<pre><code class="language-bash">cd .. # 进入UCVMC/
-./stage_large_files.py # 移动数据文件
-./ucvm_setup.py # 开始安装
-</code></pre>
-
-<p>脚本会询问一些安装问题。安装过程需要较长时间。
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">git clone https://github.com/SCECCode/UCVMC.git
+</code></pre></div><h1 id="下载大型数据文件">下载大型数据文件</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd UCVMC/largefiles
+git checkout dev <span style="color:#75715e"># 如果要使用开发版</span>
+conda activate python2 <span style="color:#75715e"># 激活 python2 环境</span>
+./get_large_files.py <span style="color:#75715e"># 下载大型数据文件</span>
+</code></pre></div><p>数据文件比较大，可能需要较长的时间。数据下载完毕后会显示：</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Completed all required downloads. This computer is now ready to build and install the UCVMC programs and scripts.
+</code></pre></div><p>然后，需要检查数据下载是否成功</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./check_largefiles_md5.py
+</code></pre></div><p>如果输出如下，表示下载成功。这个数据检查是用的md5，该脚本在 Mac 上无法使用。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">Checked 10 UCVM large files with: 10 OK, and: 0 errors
+</code></pre></div><h1 id="安装">安装</h1>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">cd .. <span style="color:#75715e"># 进入UCVMC/</span>
+./stage_large_files.py <span style="color:#75715e"># 移动数据文件</span>
+./ucvm_setup.py <span style="color:#75715e"># 开始安装</span>
+</code></pre></div><p>脚本会询问一些安装问题。安装过程需要较长时间。
 安装完毕后，脚本会输出以下类似内容，将其加入环境变量</p>
-
-<pre><code class="language-text">export LD_LIBRARY_PATH=/home/peterpan/ucvm-17.1.0/lib/euclid3/lib:$LD_LIBRARY_PATH
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-text" data-lang="text">export LD_LIBRARY_PATH=/home/peterpan/ucvm-17.1.0/lib/euclid3/lib:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/home/peterpan/ucvm-17.1.0/lib/proj-4/lib:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/home/peterpan/ucvm-17.1.0/model/cvms426/lib:$LD_LIBRARY_PATH
 export LD_LIBRARY_PATH=/home/peterpan/ucvm-17.1.0/model/cencal/lib:$LD_LIBRARY_PATH
 export PYTHONPATH=${PYTHONPATH}:/home/peterpan/ucvm-17.1.0/utilities:/home/peterpan/ucvm-17.1.0/ucvm-17.1.0/utilities/pycvm
-</code></pre>
-
-<p>然后在安装路径下（不是 git 下载的源码目录）输入以下命令，如果正常输出结果，即表示安装成功。</p>
-
-<pre><code class="language-bash">./bin/ucvm_query -f ./conf/ucvm.conf -m cvms &lt; ./tests/test_latlons.txt
-</code></pre>
-
+</code></pre></div><p>然后在安装路径下（不是 git 下载的源码目录）输入以下命令，如果正常输出结果，即表示安装成功。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">./bin/ucvm_query -f ./conf/ucvm.conf -m cvms &lt; ./tests/test_latlons.txt
+</code></pre></div>
     </div>
 
     

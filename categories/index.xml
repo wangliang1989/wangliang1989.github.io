@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Seismology - A super blog for seismology</title>
@@ -6,34 +6,26 @@
     <description>Recent content in Categories on Seismology - A super blog for seismology</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
+    <lastBuildDate>Wed, 22 Jan 2020 16:58:00 +0800</lastBuildDate>
     
 	<atom:link href="https://seismology.xyz/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Gmt</title>
-      <link>https://seismology.xyz/categories/gmt/</link>
-      <pubDate>Sat, 14 Jul 2018 11:10:00 +0800</pubDate>
+      <title>数据获取</title>
+      <link>https://seismology.xyz/categories/%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96/</link>
+      <pubDate>Wed, 22 Jan 2020 16:58:00 +0800</pubDate>
       
-      <guid>https://seismology.xyz/categories/gmt/</guid>
+      <guid>https://seismology.xyz/categories/%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Talk</title>
-      <link>https://seismology.xyz/categories/talk/</link>
-      <pubDate>Thu, 15 Nov 2018 21:54:00 +0800</pubDate>
+      <title>计算机</title>
+      <link>https://seismology.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
+      <pubDate>Wed, 13 Nov 2019 20:40:00 +0800</pubDate>
       
-      <guid>https://seismology.xyz/categories/talk/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>会议日记</title>
-      <link>https://seismology.xyz/categories/%E4%BC%9A%E8%AE%AE%E6%97%A5%E8%AE%B0/</link>
-      <pubDate>Wed, 05 Jul 2017 08:12:00 +0800</pubDate>
-      
-      <guid>https://seismology.xyz/categories/%E4%BC%9A%E8%AE%AE%E6%97%A5%E8%AE%B0/</guid>
+      <guid>https://seismology.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
       <description></description>
     </item>
     
@@ -47,11 +39,11 @@
     </item>
     
     <item>
-      <title>数据获取</title>
-      <link>https://seismology.xyz/categories/%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96/</link>
-      <pubDate>Wed, 22 Jan 2020 16:58:00 +0800</pubDate>
+      <title>talk</title>
+      <link>https://seismology.xyz/categories/talk/</link>
+      <pubDate>Thu, 15 Nov 2018 21:54:00 +0800</pubDate>
       
-      <guid>https://seismology.xyz/categories/%E6%95%B0%E6%8D%AE%E8%8E%B7%E5%8F%96/</guid>
+      <guid>https://seismology.xyz/categories/talk/</guid>
       <description></description>
     </item>
     
@@ -65,20 +57,29 @@
     </item>
     
     <item>
+      <title>GMT</title>
+      <link>https://seismology.xyz/categories/gmt/</link>
+      <pubDate>Sat, 14 Jul 2018 11:10:00 +0800</pubDate>
+      
+      <guid>https://seismology.xyz/categories/gmt/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>会议日记</title>
+      <link>https://seismology.xyz/categories/%E4%BC%9A%E8%AE%AE%E6%97%A5%E8%AE%B0/</link>
+      <pubDate>Wed, 05 Jul 2017 08:12:00 +0800</pubDate>
+      
+      <guid>https://seismology.xyz/categories/%E4%BC%9A%E8%AE%AE%E6%97%A5%E8%AE%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>编程</title>
       <link>https://seismology.xyz/categories/%E7%BC%96%E7%A8%8B/</link>
       <pubDate>Wed, 13 Jan 2016 12:13:19 +0800</pubDate>
       
       <guid>https://seismology.xyz/categories/%E7%BC%96%E7%A8%8B/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>计算机</title>
-      <link>https://seismology.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</link>
-      <pubDate>Wed, 13 Nov 2019 20:40:00 +0800</pubDate>
-      
-      <guid>https://seismology.xyz/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/</guid>
       <description></description>
     </item>
     
